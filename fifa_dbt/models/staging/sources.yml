@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: fifa_silver
+    database: workspace
+    schema: fifa_project
+    tables:
+      - name: silver_player
+      - name: silver_team
+      - name: silver_league
+      - name: silver_country
+      - name: silver_match

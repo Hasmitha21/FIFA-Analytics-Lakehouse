@@ -1,0 +1,13 @@
+--  Top 10 current players by overall rating (bar chart)
+-- Uses the SCD2 history table from the PySpark gold layer
+SELECT
+    p.player_name,
+    r.overall_rating,
+    r.potential,
+    r.preferred_foot
+FROM workspace.fifa_project.dim_player_ratings_history r
+JOIN workspace.fifa_project_dbt.dim_player p
+    ON r.player_api_id = p.player_api_id
+WHERE r.is_current = true
+ORDER BY r.overall_rating DESC
+LIMIT 10;

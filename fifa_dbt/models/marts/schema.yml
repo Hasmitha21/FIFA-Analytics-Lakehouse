@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: dim_player
+    description: "One row per player with biographical info"
+    columns:
+      - name: player_api_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_team
+    description: "One row per team"
+    columns:
+      - name: team_api_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_league
+    description: "League joined with country"
+    columns:
+      - name: league_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_match_results
+    description: "One row per match with result and goal difference"
+    columns:
+      - name: match_api_id
+        tests:
+          - unique
+          - not_null
+      - name: home_team_api_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_team')
+                field: team_api_id
+      - name: away_team_api_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_team')
+                field: team_api_id
+      - name: result
+        tests:
+          - accepted_values:
+              arguments:
+                values: ["HOME_WIN", "AWAY_WIN", "DRAW"]

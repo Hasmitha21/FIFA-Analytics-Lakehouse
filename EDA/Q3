@@ -1,0 +1,10 @@
+SELECT
+    p.player_name,
+    r.valid_from,
+    r.overall_rating,
+    r.potential
+FROM workspace.fifa_project.dim_player_ratings_history r
+JOIN workspace.fifa_project_dbt.dim_player p
+    ON r.player_api_id = p.player_api_id
+WHERE r.player_api_id = 30981
+ORDER BY r.valid_from;

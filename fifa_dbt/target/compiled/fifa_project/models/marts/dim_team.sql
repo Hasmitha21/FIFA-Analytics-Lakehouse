@@ -1,0 +1,1 @@
+select * from `workspace`.`fifa_project_dbt`.`stg_team`
