@@ -1,0 +1,1618 @@
+[0m12:53:13.572498 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD1E04D850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD1DD76550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD1DE98E50>]}
+
+
+============================== 12:53:13.589007 | 8b7bada4-6533-4c05-846f-7e2adc7944b9 ==============================
+[0m12:53:13.589007 [info ] [MainThread]: Running with dbt=1.11.11
+[0m12:53:13.589007 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\hasmi\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\hasmi\\Downloads\\fifa_dbt_project\\fifa_dbt_project\\logs'}
+[0m12:53:13.604874 [info ] [MainThread]: dbt version: 1.11.11
+[0m12:53:13.604874 [info ] [MainThread]: python version: 3.11.9
+[0m12:53:13.604874 [info ] [MainThread]: python path: C:\Users\hasmi\Downloads\fifa_dbt_project\fifa_dbt_project\venv\Scripts\python.exe
+[0m12:53:13.604874 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m12:53:17.411300 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m12:53:17.411300 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m12:53:17.411300 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m12:53:20.700129 [info ] [MainThread]: Using profiles dir at C:\Users\hasmi\.dbt
+[0m12:53:20.700129 [info ] [MainThread]: Using profiles.yml file at C:\Users\hasmi\.dbt\profiles.yml
+[0m12:53:20.700129 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\hasmi\Downloads\fifa_dbt_project\fifa_dbt_project\dbt_project.yml
+[0m12:53:20.700129 [info ] [MainThread]: adapter type: databricks
+[0m12:53:20.700129 [info ] [MainThread]: adapter version: 1.12.1
+[0m12:53:20.811585 [info ] [MainThread]: Configuration:
+[0m12:53:20.814488 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:53:20.814488 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:53:20.814488 [info ] [MainThread]: Required dependencies:
+[0m12:53:20.814488 [debug] [MainThread]: Executing "git --help"
+[0m12:53:20.924958 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:53:20.924958 [debug] [MainThread]: STDERR: "b''"
+[0m12:53:20.930306 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:53:20.930306 [info ] [MainThread]: Connection:
+[0m12:53:20.932327 [info ] [MainThread]:   host: dbc-e67cd08d-27db.cloud.databricks.com
+[0m12:53:20.932327 [info ] [MainThread]:   http_path: dbc-e67cd08d-27db.cloud.databricks.com
+[0m12:53:20.932327 [info ] [MainThread]:   catalog: workspace
+[0m12:53:20.932327 [info ] [MainThread]:   schema: fifa_project_dbt
+[0m12:53:20.932327 [info ] [MainThread]: Registered adapter: databricks=1.12.1
+[0m12:53:21.441375 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m12:53:21.441375 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m12:53:22.020161 [info ] [MainThread]: Databricks adapter:   SPOG host (host_type='workspace'): no
+[0m12:53:22.020161 [info ] [MainThread]: Databricks adapter:   workspace_id (from ?o= in http_path): None
+[0m12:53:22.020161 [info ] [MainThread]: Databricks adapter:   databricks-sql-connector version: 4.2.6 (supported)
+[0m12:53:22.027172 [info ] [MainThread]: Databricks adapter:   databricks-sdk version: 0.104.0 (supported)
+[0m12:53:22.027172 [debug] [MainThread]: Using databricks connection "debug"
+[0m12:53:22.027172 [debug] [MainThread]: On debug: select 1 as id
+[0m12:53:22.028896 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:53:22.886107 [error] [MainThread]: databricks-sql-connector adapter: ThriftBackend.attempt_request: Exception: %s
+[0m12:53:22.905400 [error] [MainThread]: Databricks adapter: Connection(session-id=Unknown) - Exception while trying to create connection: Error during request to server. 
+Error properties: attempt=1/30, bounded-retry-delay=None, elapsed-seconds=0.2983591556549072/900.0, error-message=, http-code=404, method=OpenSession, no-retry-reason=non-retryable error, original-exception=, query-id=None, session-id=None
+[0m12:53:22.905400 [debug] [MainThread]: Databricks adapter: Exception while trying to execute query
+select 1 as id
+: Database Error
+  Error during request to server. 
+[0m12:53:22.905400 [debug] [MainThread]: On debug: No close available on handle
+[0m12:53:22.905400 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m12:53:22.905400 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:53:22.905400 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Database Error
+    Error during request to server. 
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m12:53:22.905400 [debug] [MainThread]: Command `dbt debug` failed at 12:53:22.905400 after 9.47 seconds
+[0m12:53:22.905400 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD41DCBE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD1F0B2710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD1F0B2210>]}
+[0m12:53:22.905400 [debug] [MainThread]: Flushing usage events
+[0m12:53:23.442618 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:54:41.149837 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022696B40850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022696B35990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022696B36650>]}
+
+
+============================== 12:54:41.149837 | 2f0805ef-1039-4fe5-9770-f01bb56e9c13 ==============================
+[0m12:54:41.149837 [info ] [MainThread]: Running with dbt=1.11.11
+[0m12:54:41.149837 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\hasmi\\.dbt', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\hasmi\\Downloads\\fifa_dbt_project\\fifa_dbt_project\\logs'}
+[0m12:54:41.179242 [info ] [MainThread]: dbt version: 1.11.11
+[0m12:54:41.179242 [info ] [MainThread]: python version: 3.11.9
+[0m12:54:41.179242 [info ] [MainThread]: python path: C:\Users\hasmi\Downloads\fifa_dbt_project\fifa_dbt_project\venv\Scripts\python.exe
+[0m12:54:41.179242 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m12:54:42.075284 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m12:54:42.075284 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m12:54:42.086930 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m12:54:43.021184 [info ] [MainThread]: Using profiles dir at C:\Users\hasmi\.dbt
+[0m12:54:43.021184 [info ] [MainThread]: Using profiles.yml file at C:\Users\hasmi\.dbt\profiles.yml
+[0m12:54:43.021184 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\hasmi\Downloads\fifa_dbt_project\fifa_dbt_project\dbt_project.yml
+[0m12:54:43.021184 [info ] [MainThread]: adapter type: databricks
+[0m12:54:43.026168 [info ] [MainThread]: adapter version: 1.12.1
+[0m12:54:43.100307 [info ] [MainThread]: Configuration:
+[0m12:54:43.100307 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:54:43.116010 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:54:43.116010 [info ] [MainThread]: Required dependencies:
+[0m12:54:43.116010 [debug] [MainThread]: Executing "git --help"
+[0m12:54:43.227365 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:54:43.227365 [debug] [MainThread]: STDERR: "b''"
+[0m12:54:43.229369 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:54:43.229369 [info ] [MainThread]: Connection:
+[0m12:54:43.229369 [info ] [MainThread]:   host: dbc-e67cd08d-27db.cloud.databricks.com
+[0m12:54:43.229369 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/402b25bf1b1f1354
+[0m12:54:43.231373 [info ] [MainThread]:   catalog: workspace
+[0m12:54:43.231373 [info ] [MainThread]:   schema: fifa_project_dbt
+[0m12:54:43.231373 [info ] [MainThread]: Registered adapter: databricks=1.12.1
+[0m12:54:43.690483 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m12:54:43.690483 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m12:54:44.237737 [info ] [MainThread]: Databricks adapter:   SPOG host (host_type='workspace'): no
+[0m12:54:44.237737 [info ] [MainThread]: Databricks adapter:   workspace_id (from ?o= in http_path): None
+[0m12:54:44.237737 [info ] [MainThread]: Databricks adapter:   databricks-sql-connector version: 4.2.6 (supported)
+[0m12:54:44.237737 [info ] [MainThread]: Databricks adapter:   databricks-sdk version: 0.104.0 (supported)
+[0m12:54:44.237737 [debug] [MainThread]: Using databricks connection "debug"
+[0m12:54:44.237737 [debug] [MainThread]: On debug: select 1 as id
+[0m12:54:44.237737 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:54:45.802735 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f16506-3a01-1de6-959b-94910da31e1c) - Created
+[0m12:55:01.383543 [debug] [MainThread]: SQL status: OK in 17.150 seconds
+[0m12:55:01.385550 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f16506-3a01-1de6-959b-94910da31e1c, command-id=01f16506-3a5a-1737-b7ed-79e52794379a) - Closing
+[0m12:55:01.675572 [debug] [MainThread]: On debug: Close
+[0m12:55:01.688491 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f16506-3a01-1de6-959b-94910da31e1c) - Closing
+[0m12:55:01.842478 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:55:01.842478 [info ] [MainThread]: [32mAll checks passed![0m
+[0m12:55:01.844483 [debug] [MainThread]: Command `dbt debug` succeeded at 12:55:01.844483 after 20.86 seconds
+[0m12:55:01.844483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226906FF410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022694CA52D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022695AB3450>]}
+[0m12:55:01.844483 [debug] [MainThread]: Flushing usage events
+[0m12:55:02.372541 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:55:49.185777 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE55C43910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE54BA7F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE54A0C290>]}
+
+
+============================== 12:55:49.201581 | 16f16a83-4690-4e40-900d-ecde9c5524c4 ==============================
+[0m12:55:49.201581 [info ] [MainThread]: Running with dbt=1.11.11
+[0m12:55:49.201581 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\hasmi\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\hasmi\\Downloads\\fifa_dbt_project\\fifa_dbt_project\\logs'}
+[0m12:55:50.121432 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m12:55:50.121432 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m12:55:50.121432 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m12:55:51.201605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '16f16a83-4690-4e40-900d-ecde9c5524c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE78703490>]}
+[0m12:55:51.250949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '16f16a83-4690-4e40-900d-ecde9c5524c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE53C52810>]}
+[0m12:55:51.250949 [info ] [MainThread]: Registered adapter: databricks=1.12.1
+[0m12:55:51.747922 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m12:55:51.747922 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m12:55:51.747922 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '16f16a83-4690-4e40-900d-ecde9c5524c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE79A58390>]}
+[0m12:55:55.406772 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'fct_match_results'
+in package 'fifa_project' (models\marts\schema.yml). Arguments to generic tests
+should be nested under the `arguments` property.
+[0m12:55:55.408776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '16f16a83-4690-4e40-900d-ecde9c5524c4', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE7A154C90>]}
+[0m12:55:55.616851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '16f16a83-4690-4e40-900d-ecde9c5524c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE7A21CB10>]}
+[0m12:55:55.892174 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\hasmi\Downloads\fifa_dbt_project\fifa_dbt_project\target\manifest.json
+[0m12:55:55.892174 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\hasmi\Downloads\fifa_dbt_project\fifa_dbt_project\target\semantic_manifest.json
+[0m12:55:55.933204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '16f16a83-4690-4e40-900d-ecde9c5524c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE7A0C8310>]}
+[0m12:55:55.933204 [info ] [MainThread]: Found 9 models, 1 snapshot, 11 data tests, 5 sources, 758 macros
+[0m12:55:55.935208 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '16f16a83-4690-4e40-900d-ecde9c5524c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE7A0741D0>]}
+[0m12:55:55.937212 [info ] [MainThread]: 
+[0m12:55:55.937212 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:55:55.938956 [info ] [MainThread]: 
+[0m12:55:55.938956 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m12:55:55.938956 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m12:55:55.946974 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace) - Creating connection
+[0m12:55:55.946974 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace'
+[0m12:55:55.956732 [debug] [ThreadPool]: Using databricks connection "list_workspace"
+[0m12:55:55.956732 [debug] [ThreadPool]: On list_workspace: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "16f16a83-4690-4e40-900d-ecde9c5524c4", "connection_name": "list_workspace"} */
+
+    
+
+  SHOW SCHEMAS IN `workspace`
+
+
+  
+[0m12:55:55.958736 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:55:57.812885 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16506-6504-1cd3-aad7-278edfe62280) - Created
+[0m12:55:59.027617 [debug] [ThreadPool]: SQL status: OK in 3.070 seconds
+[0m12:55:59.027617 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f16506-6504-1cd3-aad7-278edfe62280, command-id=01f16506-6544-186d-b701-bd9554c55bc1) - Closing
+[0m12:55:59.027617 [debug] [ThreadPool]: On list_workspace: Close
+[0m12:55:59.027617 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16506-6504-1cd3-aad7-278edfe62280) - Closing
+[0m12:55:59.166877 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=create_workspace_fifa_project_dbt) - Creating connection
+[0m12:55:59.168628 [debug] [ThreadPool]: Acquiring new databricks connection 'create_workspace_fifa_project_dbt'
+[0m12:55:59.170638 [debug] [ThreadPool]: Creating schema "database: "workspace"
+schema: "fifa_project_dbt"
+"
+[0m12:55:59.178664 [debug] [ThreadPool]: Using databricks connection "create_workspace_fifa_project_dbt"
+[0m12:55:59.178664 [debug] [ThreadPool]: On create_workspace_fifa_project_dbt: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "16f16a83-4690-4e40-900d-ecde9c5524c4", "connection_name": "create_workspace_fifa_project_dbt"} */
+create schema if not exists `workspace`.`fifa_project_dbt`
+  
+[0m12:55:59.178664 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:55:59.580422 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16506-663e-1b35-ace5-0bf1d1306664) - Created
+[0m12:56:00.693230 [debug] [ThreadPool]: SQL status: OK in 1.510 seconds
+[0m12:56:00.693230 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f16506-663e-1b35-ace5-0bf1d1306664, command-id=01f16506-6653-1843-bc04-c8e484000c0d) - Closing
+[0m12:56:00.693230 [debug] [ThreadPool]: On create_workspace_fifa_project_dbt: Close
+[0m12:56:00.693230 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16506-663e-1b35-ace5-0bf1d1306664) - Closing
+[0m12:56:00.806795 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace_fifa_project_dbt_snapshots) - Creating connection
+[0m12:56:00.806795 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace_fifa_project_dbt) - Creating connection
+[0m12:56:00.806795 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace_fifa_project_dbt_snapshots'
+[0m12:56:00.806795 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace_fifa_project_dbt'
+[0m12:56:00.821593 [debug] [ThreadPool]: Using databricks connection "list_workspace_fifa_project_dbt_snapshots"
+[0m12:56:00.821593 [debug] [ThreadPool]: Using databricks connection "list_workspace_fifa_project_dbt"
+[0m12:56:00.821593 [debug] [ThreadPool]: On list_workspace_fifa_project_dbt_snapshots: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "16f16a83-4690-4e40-900d-ecde9c5524c4", "connection_name": "list_workspace_fifa_project_dbt_snapshots"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'workspace'
+  AND table_schema = 'fifa_project_dbt_snapshots'
+
+  
+[0m12:56:00.821593 [debug] [ThreadPool]: On list_workspace_fifa_project_dbt: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "16f16a83-4690-4e40-900d-ecde9c5524c4", "connection_name": "list_workspace_fifa_project_dbt"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'workspace'
+  AND table_schema = 'fifa_project_dbt'
+
+  
+[0m12:56:00.821593 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:56:00.821593 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:56:01.235074 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16506-673d-1f2b-9232-2b372a77beb1) - Created
+[0m12:56:01.251813 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16506-6740-1e8f-84ea-86b3aa786608) - Created
+[0m12:56:02.747031 [debug] [ThreadPool]: SQL status: OK in 1.930 seconds
+[0m12:56:02.763077 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f16506-673d-1f2b-9232-2b372a77beb1, command-id=01f16506-674f-1a00-bf2f-11973da99f54) - Closing
+[0m12:56:02.763077 [debug] [ThreadPool]: On list_workspace_fifa_project_dbt: Close
+[0m12:56:02.763077 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16506-673d-1f2b-9232-2b372a77beb1) - Closing
+[0m12:56:02.778946 [debug] [ThreadPool]: SQL status: OK in 1.960 seconds
+[0m12:56:02.778946 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f16506-6740-1e8f-84ea-86b3aa786608, command-id=01f16506-6752-17e1-b013-28666bd8557c) - Closing
+[0m12:56:02.874996 [debug] [ThreadPool]: On list_workspace_fifa_project_dbt_snapshots: Close
+[0m12:56:02.874996 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16506-6740-1e8f-84ea-86b3aa786608) - Closing
+[0m12:56:02.991315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '16f16a83-4690-4e40-900d-ecde9c5524c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE79FE7910>]}
+[0m12:56:03.004358 [debug] [Thread-4 (]: Began running node model.fifa_project.stg_country
+[0m12:56:03.004358 [debug] [Thread-5 (]: Began running node model.fifa_project.stg_league
+[0m12:56:03.004358 [debug] [Thread-6 (]: Began running node model.fifa_project.stg_match
+[0m12:56:03.004358 [debug] [Thread-7 (]: Began running node model.fifa_project.stg_player
+[0m12:56:03.020361 [info ] [Thread-4 (]: 1 of 9 START sql view model fifa_project_dbt.stg_country ....................... [RUN]
+[0m12:56:03.020361 [info ] [Thread-5 (]: 2 of 9 START sql view model fifa_project_dbt.stg_league ........................ [RUN]
+[0m12:56:03.020361 [info ] [Thread-6 (]: 3 of 9 START sql view model fifa_project_dbt.stg_match ......................... [RUN]
+[0m12:56:03.020361 [info ] [Thread-7 (]: 4 of 9 START sql view model fifa_project_dbt.stg_player ........................ [RUN]
+[0m12:56:03.020361 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.fifa_project.stg_country) - Creating connection
+[0m12:56:03.020361 [debug] [Thread-5 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.fifa_project.stg_league) - Creating connection
+[0m12:56:03.020361 [debug] [Thread-6 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.fifa_project.stg_match) - Creating connection
+[0m12:56:03.020361 [debug] [Thread-7 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.fifa_project.stg_player) - Creating connection
+[0m12:56:03.020361 [debug] [Thread-4 (]: Acquiring new databricks connection 'model.fifa_project.stg_country'
+[0m12:56:03.020361 [debug] [Thread-5 (]: Acquiring new databricks connection 'model.fifa_project.stg_league'
+[0m12:56:03.020361 [debug] [Thread-6 (]: Acquiring new databricks connection 'model.fifa_project.stg_match'
+[0m12:56:03.020361 [debug] [Thread-7 (]: Acquiring new databricks connection 'model.fifa_project.stg_player'
+[0m12:56:03.020361 [debug] [Thread-4 (]: Began compiling node model.fifa_project.stg_country
+[0m12:56:03.020361 [debug] [Thread-5 (]: Began compiling node model.fifa_project.stg_league
+[0m12:56:03.020361 [debug] [Thread-6 (]: Began compiling node model.fifa_project.stg_match
+[0m12:56:03.020361 [debug] [Thread-7 (]: Began compiling node model.fifa_project.stg_player
+[0m12:56:03.036087 [debug] [Thread-4 (]: Writing injected SQL for node "model.fifa_project.stg_country"
+[0m12:56:03.036087 [debug] [Thread-5 (]: Writing injected SQL for node "model.fifa_project.stg_league"
+[0m12:56:03.036087 [debug] [Thread-6 (]: Writing injected SQL for node "model.fifa_project.stg_match"
+[0m12:56:03.036087 [debug] [Thread-7 (]: Writing injected SQL for node "model.fifa_project.stg_player"
+[0m12:56:03.051894 [debug] [Thread-4 (]: Began executing node model.fifa_project.stg_country
+[0m12:56:03.067739 [debug] [Thread-5 (]: Began executing node model.fifa_project.stg_league
+[0m12:56:03.067739 [debug] [Thread-4 (]: MATERIALIZING VIEW
+[0m12:56:03.067739 [debug] [Thread-6 (]: Began executing node model.fifa_project.stg_match
+[0m12:56:03.067739 [debug] [Thread-5 (]: MATERIALIZING VIEW
+[0m12:56:03.067739 [debug] [Thread-7 (]: Began executing node model.fifa_project.stg_player
+[0m12:56:03.083566 [debug] [Thread-4 (]: Creating view `workspace`.`fifa_project_dbt`.`stg_country`
+[0m12:56:03.083566 [debug] [Thread-6 (]: MATERIALIZING VIEW
+[0m12:56:03.083566 [debug] [Thread-5 (]: Creating view `workspace`.`fifa_project_dbt`.`stg_league`
+[0m12:56:03.083566 [debug] [Thread-7 (]: MATERIALIZING VIEW
+[0m12:56:03.099595 [debug] [Thread-4 (]: Writing runtime sql for node "model.fifa_project.stg_country"
+[0m12:56:03.099595 [debug] [Thread-6 (]: Creating view `workspace`.`fifa_project_dbt`.`stg_match`
+[0m12:56:03.099595 [debug] [Thread-5 (]: Writing runtime sql for node "model.fifa_project.stg_league"
+[0m12:56:03.099595 [debug] [Thread-7 (]: Creating view `workspace`.`fifa_project_dbt`.`stg_player`
+[0m12:56:03.099595 [debug] [Thread-6 (]: Writing runtime sql for node "model.fifa_project.stg_match"
+[0m12:56:03.099595 [debug] [Thread-7 (]: Writing runtime sql for node "model.fifa_project.stg_player"
+[0m12:56:03.099595 [debug] [Thread-4 (]: Using databricks connection "model.fifa_project.stg_country"
+[0m12:56:03.099595 [debug] [Thread-6 (]: Using databricks connection "model.fifa_project.stg_match"
+[0m12:56:03.099595 [debug] [Thread-5 (]: Using databricks connection "model.fifa_project.stg_league"
+[0m12:56:03.099595 [debug] [Thread-7 (]: Using databricks connection "model.fifa_project.stg_player"
+[0m12:56:03.115703 [debug] [Thread-4 (]: On model.fifa_project.stg_country: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "16f16a83-4690-4e40-900d-ecde9c5524c4", "node_id": "model.fifa_project.stg_country"} */
+
+  
+  
+  
+  create or replace view `workspace`.`fifa_project_dbt`.`stg_country`
+  
+  as (
+    select
+    country_id,
+    country_name
+from `workspace`.`fifa_project`.`silver_country`
+  )
+
+[0m12:56:03.115703 [debug] [Thread-6 (]: On model.fifa_project.stg_match: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "16f16a83-4690-4e40-900d-ecde9c5524c4", "node_id": "model.fifa_project.stg_match"} */
+
+  
+  
+  
+  create or replace view `workspace`.`fifa_project_dbt`.`stg_match`
+  
+  as (
+    select
+    match_api_id,
+    country_id,
+    league_id,
+    season,
+    stage,
+    date,
+    home_team_api_id,
+    away_team_api_id,
+    home_team_goal,
+    away_team_goal
+from `workspace`.`fifa_project`.`silver_match`
+  )
+
+[0m12:56:03.116813 [debug] [Thread-5 (]: On model.fifa_project.stg_league: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "16f16a83-4690-4e40-900d-ecde9c5524c4", "node_id": "model.fifa_project.stg_league"} */
+
+  
+  
+  
+  create or replace view `workspace`.`fifa_project_dbt`.`stg_league`
+  
+  as (
+    select
+    league_id,
+    country_id,
+    league_name
+from `workspace`.`fifa_project`.`silver_league`
+  )
+
+[0m12:56:03.116813 [debug] [Thread-7 (]: On model.fifa_project.stg_player: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "16f16a83-4690-4e40-900d-ecde9c5524c4", "node_id": "model.fifa_project.stg_player"} */
+
+  
+  
+  
+  create or replace view `workspace`.`fifa_project_dbt`.`stg_player`
+  
+  as (
+    select
+    player_api_id,
+    player_name,
+    birthday,
+    height,
+    weight
+from `workspace`.`fifa_project`.`silver_player`
+  )
+
+[0m12:56:03.116813 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m12:56:03.116813 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m12:56:03.116813 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m12:56:03.116813 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m12:56:03.577989 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f16506-68a2-1788-8c19-50d5e6e5a617) - Created
+[0m12:56:03.577989 [debug] [Thread-7 (]: Databricks adapter: Connection(session-id=01f16506-68a7-11ca-8853-9055e26f9f33) - Created
+[0m12:56:03.595392 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f16506-68a9-149f-b251-fc28a6c91b9d) - Created
+[0m12:56:03.609915 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f16506-68a7-18db-a5ba-70c004d4c0fd) - Created
+[0m12:56:06.299005 [debug] [Thread-6 (]: SQL status: OK in 3.180 seconds
+[0m12:56:06.299005 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f16506-68a7-18db-a5ba-70c004d4c0fd, command-id=01f16506-68bb-1b40-95f8-641c254e74ff) - Closing
+[0m12:56:06.315271 [debug] [Thread-6 (]: Applying tags to relation None
+[0m12:56:06.315271 [debug] [Thread-6 (]: On model.fifa_project.stg_match: Close
+[0m12:56:06.315271 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f16506-68a7-18db-a5ba-70c004d4c0fd) - Closing
+[0m12:56:06.446179 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16f16a83-4690-4e40-900d-ecde9c5524c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE79CFDC10>]}
+[0m12:56:06.446179 [info ] [Thread-6 (]: 3 of 9 OK created sql view model fifa_project_dbt.stg_match .................... [[32mOK[0m in 3.43s]
+[0m12:56:06.446179 [debug] [Thread-6 (]: Finished running node model.fifa_project.stg_match
+[0m12:56:06.446179 [debug] [Thread-7 (]: SQL status: OK in 3.330 seconds
+[0m12:56:06.446179 [debug] [Thread-6 (]: Began running node model.fifa_project.stg_team
+[0m12:56:06.446179 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f16506-68a7-11ca-8853-9055e26f9f33, command-id=01f16506-68b6-16cf-a7dc-a5b4232e5f9b) - Closing
+[0m12:56:06.446179 [info ] [Thread-6 (]: 5 of 9 START sql view model fifa_project_dbt.stg_team .......................... [RUN]
+[0m12:56:06.446179 [debug] [Thread-7 (]: Applying tags to relation None
+[0m12:56:06.446179 [debug] [Thread-6 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.fifa_project.stg_team) - Creating connection
+[0m12:56:06.458013 [debug] [Thread-7 (]: On model.fifa_project.stg_player: Close
+[0m12:56:06.458013 [debug] [Thread-6 (]: Acquiring new databricks connection 'model.fifa_project.stg_team'
+[0m12:56:06.458013 [debug] [Thread-7 (]: Databricks adapter: Connection(session-id=01f16506-68a7-11ca-8853-9055e26f9f33) - Closing
+[0m12:56:06.458013 [debug] [Thread-6 (]: Began compiling node model.fifa_project.stg_team
+[0m12:56:06.458013 [debug] [Thread-6 (]: Writing injected SQL for node "model.fifa_project.stg_team"
+[0m12:56:06.458013 [debug] [Thread-5 (]: SQL status: OK in 3.340 seconds
+[0m12:56:06.471981 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f16506-68a9-149f-b251-fc28a6c91b9d, command-id=01f16506-68b8-107b-a107-0ca79536b7d7) - Closing
+[0m12:56:06.473809 [debug] [Thread-5 (]: Applying tags to relation None
+[0m12:56:06.473809 [debug] [Thread-6 (]: Began executing node model.fifa_project.stg_team
+[0m12:56:06.477220 [debug] [Thread-6 (]: MATERIALIZING VIEW
+[0m12:56:06.477220 [debug] [Thread-6 (]: Creating view `workspace`.`fifa_project_dbt`.`stg_team`
+[0m12:56:06.477220 [debug] [Thread-6 (]: Writing runtime sql for node "model.fifa_project.stg_team"
+[0m12:56:06.552713 [debug] [Thread-4 (]: SQL status: OK in 3.440 seconds
+[0m12:56:06.552713 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f16506-68a2-1788-8c19-50d5e6e5a617, command-id=01f16506-68b4-1446-8817-c71ab5abf926) - Closing
+[0m12:56:06.552713 [debug] [Thread-4 (]: Applying tags to relation None
+[0m12:56:06.568773 [debug] [Thread-5 (]: On model.fifa_project.stg_league: Close
+[0m12:56:06.568773 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f16506-68a9-149f-b251-fc28a6c91b9d) - Closing
+[0m12:56:06.681235 [debug] [Thread-6 (]: Using databricks connection "model.fifa_project.stg_team"
+[0m12:56:06.681235 [debug] [Thread-4 (]: On model.fifa_project.stg_country: Close
+[0m12:56:06.681235 [debug] [Thread-6 (]: On model.fifa_project.stg_team: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "16f16a83-4690-4e40-900d-ecde9c5524c4", "node_id": "model.fifa_project.stg_team"} */
+
+  
+  
+  
+  create or replace view `workspace`.`fifa_project_dbt`.`stg_team`
+  
+  as (
+    select
+    team_api_id,
+    team_long_name,
+    team_short_name
+from `workspace`.`fifa_project`.`silver_team`
+  )
+
+[0m12:56:06.681235 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f16506-68a2-1788-8c19-50d5e6e5a617) - Closing
+[0m12:56:06.681235 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m12:56:06.809981 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16f16a83-4690-4e40-900d-ecde9c5524c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE7A0DD810>]}
+[0m12:56:06.809981 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16f16a83-4690-4e40-900d-ecde9c5524c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE79C994D0>]}
+[0m12:56:06.809981 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16f16a83-4690-4e40-900d-ecde9c5524c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE7A178450>]}
+[0m12:56:06.809981 [info ] [Thread-7 (]: 4 of 9 OK created sql view model fifa_project_dbt.stg_player ................... [[32mOK[0m in 3.79s]
+[0m12:56:06.825666 [info ] [Thread-5 (]: 2 of 9 OK created sql view model fifa_project_dbt.stg_league ................... [[32mOK[0m in 3.79s]
+[0m12:56:06.825666 [info ] [Thread-4 (]: 1 of 9 OK created sql view model fifa_project_dbt.stg_country .................. [[32mOK[0m in 3.79s]
+[0m12:56:06.825666 [debug] [Thread-7 (]: Finished running node model.fifa_project.stg_player
+[0m12:56:06.825666 [debug] [Thread-5 (]: Finished running node model.fifa_project.stg_league
+[0m12:56:06.825666 [debug] [Thread-4 (]: Finished running node model.fifa_project.stg_country
+[0m12:56:06.825666 [debug] [Thread-7 (]: Began running node model.fifa_project.dim_player
+[0m12:56:06.825666 [debug] [Thread-5 (]: Began running node model.fifa_project.dim_league
+[0m12:56:06.825666 [info ] [Thread-7 (]: 6 of 9 START sql table model fifa_project_dbt.dim_player ....................... [RUN]
+[0m12:56:06.825666 [info ] [Thread-5 (]: 7 of 9 START sql table model fifa_project_dbt.dim_league ....................... [RUN]
+[0m12:56:06.825666 [debug] [Thread-7 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.fifa_project.dim_player) - Creating connection
+[0m12:56:06.825666 [debug] [Thread-5 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.fifa_project.dim_league) - Creating connection
+[0m12:56:06.825666 [debug] [Thread-7 (]: Acquiring new databricks connection 'model.fifa_project.dim_player'
+[0m12:56:06.825666 [debug] [Thread-5 (]: Acquiring new databricks connection 'model.fifa_project.dim_league'
+[0m12:56:06.825666 [debug] [Thread-7 (]: Began compiling node model.fifa_project.dim_player
+[0m12:56:06.825666 [debug] [Thread-5 (]: Began compiling node model.fifa_project.dim_league
+[0m12:56:06.825666 [debug] [Thread-7 (]: Writing injected SQL for node "model.fifa_project.dim_player"
+[0m12:56:06.825666 [debug] [Thread-5 (]: Writing injected SQL for node "model.fifa_project.dim_league"
+[0m12:56:06.842745 [debug] [Thread-5 (]: Began executing node model.fifa_project.dim_league
+[0m12:56:06.842745 [debug] [Thread-7 (]: Began executing node model.fifa_project.dim_player
+[0m12:56:06.857464 [debug] [Thread-5 (]: MATERIALIZING TABLE
+[0m12:56:06.857464 [debug] [Thread-7 (]: MATERIALIZING TABLE
+[0m12:56:06.889146 [debug] [Thread-5 (]: Using databricks connection "model.fifa_project.dim_league"
+[0m12:56:06.889146 [debug] [Thread-7 (]: Using databricks connection "model.fifa_project.dim_player"
+[0m12:56:06.889146 [debug] [Thread-5 (]: On model.fifa_project.dim_league: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "16f16a83-4690-4e40-900d-ecde9c5524c4", "node_id": "model.fifa_project.dim_league"} */
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    filter_name,
+    target_columns
+  FROM `workspace`.`information_schema`.`row_filters`
+  WHERE table_catalog = 'workspace'
+    AND table_schema = 'fifa_project_dbt'
+    AND table_name = 'dim_league'
+[0m12:56:06.889146 [debug] [Thread-7 (]: On model.fifa_project.dim_player: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "16f16a83-4690-4e40-900d-ecde9c5524c4", "node_id": "model.fifa_project.dim_player"} */
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    filter_name,
+    target_columns
+  FROM `workspace`.`information_schema`.`row_filters`
+  WHERE table_catalog = 'workspace'
+    AND table_schema = 'fifa_project_dbt'
+    AND table_name = 'dim_player'
+[0m12:56:06.889146 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m12:56:06.889146 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m12:56:07.128518 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f16506-6abd-1764-a759-ac1a3e804243) - Created
+[0m12:56:07.334859 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f16506-6ae3-12b1-be57-27079e9d5206) - Created
+[0m12:56:07.334859 [debug] [Thread-7 (]: Databricks adapter: Connection(session-id=01f16506-6ae2-1f9d-b4f8-272b4055942d) - Created
+[0m12:56:08.496439 [debug] [Thread-5 (]: SQL status: OK in 1.610 seconds
+[0m12:56:08.496439 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f16506-6ae3-12b1-be57-27079e9d5206, command-id=01f16506-6af3-1bc4-a625-988a268d273b) - Closing
+[0m12:56:08.512183 [debug] [Thread-5 (]: Writing runtime sql for node "model.fifa_project.dim_league"
+[0m12:56:08.512183 [debug] [Thread-5 (]: Using databricks connection "model.fifa_project.dim_league"
+[0m12:56:08.512183 [debug] [Thread-5 (]: On model.fifa_project.dim_league: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "16f16a83-4690-4e40-900d-ecde9c5524c4", "node_id": "model.fifa_project.dim_league"} */
+
+  
+    
+        create or replace table `workspace`.`fifa_project_dbt`.`dim_league`
+      
+      
+    using delta
+  
+      
+      
+      
+      
+      
+      
+      
+      
+      as
+      select
+    l.league_id,
+    l.league_name,
+    c.country_name
+from `workspace`.`fifa_project_dbt`.`stg_league` l
+left join `workspace`.`fifa_project_dbt`.`stg_country` c
+    on l.country_id = c.country_id
+  
+[0m12:56:08.712786 [debug] [Thread-6 (]: SQL status: OK in 2.030 seconds
+[0m12:56:08.715103 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f16506-6abd-1764-a759-ac1a3e804243, command-id=01f16506-6ad2-1383-9ec2-c57c6779047e) - Closing
+[0m12:56:08.715678 [debug] [Thread-6 (]: Applying tags to relation None
+[0m12:56:08.718694 [debug] [Thread-6 (]: On model.fifa_project.stg_team: Close
+[0m12:56:08.718694 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f16506-6abd-1764-a759-ac1a3e804243) - Closing
+[0m12:56:08.766324 [debug] [Thread-7 (]: SQL status: OK in 1.870 seconds
+[0m12:56:08.766324 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f16506-6ae2-1f9d-b4f8-272b4055942d, command-id=01f16506-6af3-1d91-b69e-2254d76ab0a0) - Closing
+[0m12:56:08.769737 [debug] [Thread-7 (]: Writing runtime sql for node "model.fifa_project.dim_player"
+[0m12:56:08.830489 [debug] [Thread-7 (]: Using databricks connection "model.fifa_project.dim_player"
+[0m12:56:08.844230 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16f16a83-4690-4e40-900d-ecde9c5524c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE79C8B990>]}
+[0m12:56:08.844230 [debug] [Thread-7 (]: On model.fifa_project.dim_player: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "16f16a83-4690-4e40-900d-ecde9c5524c4", "node_id": "model.fifa_project.dim_player"} */
+
+  
+    
+        create or replace table `workspace`.`fifa_project_dbt`.`dim_player`
+      
+      
+    using delta
+  
+      
+      
+      
+      
+      
+      
+      
+      
+      as
+      select * from `workspace`.`fifa_project_dbt`.`stg_player`
+  
+[0m12:56:08.845246 [info ] [Thread-6 (]: 5 of 9 OK created sql view model fifa_project_dbt.stg_team ..................... [[32mOK[0m in 2.38s]
+[0m12:56:08.845246 [debug] [Thread-6 (]: Finished running node model.fifa_project.stg_team
+[0m12:56:08.845246 [debug] [Thread-4 (]: Began running node model.fifa_project.dim_team
+[0m12:56:08.845246 [debug] [Thread-6 (]: Began running node model.fifa_project.fct_match_results
+[0m12:56:08.845246 [info ] [Thread-4 (]: 8 of 9 START sql table model fifa_project_dbt.dim_team ......................... [RUN]
+[0m12:56:08.850003 [info ] [Thread-6 (]: 9 of 9 START sql table model fifa_project_dbt.fct_match_results ................ [RUN]
+[0m12:56:08.850003 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.fifa_project.dim_team) - Creating connection
+[0m12:56:08.851779 [debug] [Thread-6 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.fifa_project.fct_match_results) - Creating connection
+[0m12:56:08.851779 [debug] [Thread-4 (]: Acquiring new databricks connection 'model.fifa_project.dim_team'
+[0m12:56:08.851779 [debug] [Thread-6 (]: Acquiring new databricks connection 'model.fifa_project.fct_match_results'
+[0m12:56:08.853161 [debug] [Thread-4 (]: Began compiling node model.fifa_project.dim_team
+[0m12:56:08.853161 [debug] [Thread-6 (]: Began compiling node model.fifa_project.fct_match_results
+[0m12:56:08.858173 [debug] [Thread-4 (]: Writing injected SQL for node "model.fifa_project.dim_team"
+[0m12:56:08.863158 [debug] [Thread-6 (]: Writing injected SQL for node "model.fifa_project.fct_match_results"
+[0m12:56:08.867610 [debug] [Thread-4 (]: Began executing node model.fifa_project.dim_team
+[0m12:56:08.873018 [debug] [Thread-4 (]: MATERIALIZING TABLE
+[0m12:56:08.873018 [debug] [Thread-6 (]: Began executing node model.fifa_project.fct_match_results
+[0m12:56:08.873018 [debug] [Thread-4 (]: Using databricks connection "model.fifa_project.dim_team"
+[0m12:56:08.879227 [debug] [Thread-6 (]: MATERIALIZING TABLE
+[0m12:56:08.879227 [debug] [Thread-4 (]: On model.fifa_project.dim_team: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "16f16a83-4690-4e40-900d-ecde9c5524c4", "node_id": "model.fifa_project.dim_team"} */
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    filter_name,
+    target_columns
+  FROM `workspace`.`information_schema`.`row_filters`
+  WHERE table_catalog = 'workspace'
+    AND table_schema = 'fifa_project_dbt'
+    AND table_name = 'dim_team'
+[0m12:56:08.879227 [debug] [Thread-6 (]: Using databricks connection "model.fifa_project.fct_match_results"
+[0m12:56:08.879227 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m12:56:08.879227 [debug] [Thread-6 (]: On model.fifa_project.fct_match_results: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "16f16a83-4690-4e40-900d-ecde9c5524c4", "node_id": "model.fifa_project.fct_match_results"} */
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    filter_name,
+    target_columns
+  FROM `workspace`.`information_schema`.`row_filters`
+  WHERE table_catalog = 'workspace'
+    AND table_schema = 'fifa_project_dbt'
+    AND table_name = 'fct_match_results'
+[0m12:56:08.879227 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m12:56:09.307254 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f16506-6c0f-1661-b8ca-fe667d0d087a) - Created
+[0m12:56:09.307254 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f16506-6c0f-1458-b44b-9d128c47aab6) - Created
+[0m12:56:10.628435 [debug] [Thread-6 (]: SQL status: OK in 1.750 seconds
+[0m12:56:10.640029 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f16506-6c0f-1458-b44b-9d128c47aab6, command-id=01f16506-6c1f-1300-a257-58074152370f) - Closing
+[0m12:56:10.643052 [debug] [Thread-6 (]: Writing runtime sql for node "model.fifa_project.fct_match_results"
+[0m12:56:10.644496 [debug] [Thread-6 (]: Using databricks connection "model.fifa_project.fct_match_results"
+[0m12:56:10.644496 [debug] [Thread-6 (]: On model.fifa_project.fct_match_results: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "16f16a83-4690-4e40-900d-ecde9c5524c4", "node_id": "model.fifa_project.fct_match_results"} */
+
+  
+    
+        create or replace table `workspace`.`fifa_project_dbt`.`fct_match_results`
+      
+      
+    using delta
+  
+      
+      
+      
+      
+      
+      
+      
+      
+      as
+      with match as (
+    select * from `workspace`.`fifa_project_dbt`.`stg_match`
+),
+
+home_team as (
+    select
+        team_api_id as home_team_api_id,
+        team_long_name as home_team_name
+    from `workspace`.`fifa_project_dbt`.`stg_team`
+),
+
+away_team as (
+    select
+        team_api_id as away_team_api_id,
+        team_long_name as away_team_name
+    from `workspace`.`fifa_project_dbt`.`stg_team`
+)
+
+select
+    m.match_api_id,
+    m.league_id,
+    m.season,
+    m.stage,
+    m.date,
+    m.home_team_api_id,
+    ht.home_team_name,
+    m.away_team_api_id,
+    at.away_team_name,
+    m.home_team_goal,
+    m.away_team_goal,
+    case
+        when m.home_team_goal > m.away_team_goal then 'HOME_WIN'
+        when m.home_team_goal < m.away_team_goal then 'AWAY_WIN'
+        else 'DRAW'
+    end as result,
+    abs(m.home_team_goal - m.away_team_goal) as goal_difference
+from match m
+left join home_team ht on m.home_team_api_id = ht.home_team_api_id
+left join away_team at on m.away_team_api_id = at.away_team_api_id
+  
+[0m12:56:11.279377 [debug] [Thread-4 (]: SQL status: OK in 2.400 seconds
+[0m12:56:11.282380 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f16506-6c0f-1661-b8ca-fe667d0d087a, command-id=01f16506-6c1e-1e77-9918-a86f9cdd142a) - Closing
+[0m12:56:11.285044 [debug] [Thread-4 (]: Writing runtime sql for node "model.fifa_project.dim_team"
+[0m12:56:11.286196 [debug] [Thread-4 (]: Using databricks connection "model.fifa_project.dim_team"
+[0m12:56:11.286196 [debug] [Thread-4 (]: On model.fifa_project.dim_team: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "16f16a83-4690-4e40-900d-ecde9c5524c4", "node_id": "model.fifa_project.dim_team"} */
+
+  
+    
+        create or replace table `workspace`.`fifa_project_dbt`.`dim_team`
+      
+      
+    using delta
+  
+      
+      
+      
+      
+      
+      
+      
+      
+      as
+      select * from `workspace`.`fifa_project_dbt`.`stg_team`
+  
+[0m12:56:29.968072 [debug] [Thread-6 (]: SQL status: OK in 19.320 seconds
+[0m12:56:29.968072 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f16506-6c0f-1458-b44b-9d128c47aab6, command-id=01f16506-6ceb-1073-b4c5-273f39a122b4) - Closing
+[0m12:56:30.016189 [debug] [Thread-7 (]: SQL status: OK in 21.170 seconds
+[0m12:56:30.016189 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f16506-6ae2-1f9d-b4f8-272b4055942d, command-id=01f16506-6bd8-1a83-9409-55d906915a17) - Closing
+[0m12:56:30.048583 [debug] [Thread-4 (]: SQL status: OK in 18.760 seconds
+[0m12:56:30.048583 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f16506-6c0f-1661-b8ca-fe667d0d087a, command-id=01f16506-6d4c-1e22-b298-c55434470d5c) - Closing
+[0m12:56:30.112903 [debug] [Thread-6 (]: Applying tags to relation None
+[0m12:56:30.130023 [debug] [Thread-6 (]: On model.fifa_project.fct_match_results: Close
+[0m12:56:30.130023 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f16506-6c0f-1458-b44b-9d128c47aab6) - Closing
+[0m12:56:30.192570 [debug] [Thread-7 (]: Applying tags to relation None
+[0m12:56:30.208372 [debug] [Thread-5 (]: SQL status: OK in 21.700 seconds
+[0m12:56:30.208372 [debug] [Thread-4 (]: Applying tags to relation None
+[0m12:56:30.208372 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f16506-6ae3-12b1-be57-27079e9d5206, command-id=01f16506-6ba6-1cce-8571-50b7add32015) - Closing
+[0m12:56:30.256521 [debug] [Thread-7 (]: On model.fifa_project.dim_player: Close
+[0m12:56:30.256521 [debug] [Thread-7 (]: Databricks adapter: Connection(session-id=01f16506-6ae2-1f9d-b4f8-272b4055942d) - Closing
+[0m12:56:30.366772 [debug] [Thread-4 (]: On model.fifa_project.dim_team: Close
+[0m12:56:30.366772 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f16506-6c0f-1661-b8ca-fe667d0d087a) - Closing
+[0m12:56:30.366772 [debug] [Thread-5 (]: Applying tags to relation None
+[0m12:56:30.478755 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16f16a83-4690-4e40-900d-ecde9c5524c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE78815250>]}
+[0m12:56:30.478755 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16f16a83-4690-4e40-900d-ecde9c5524c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE787D3310>]}
+[0m12:56:30.478755 [debug] [Thread-5 (]: On model.fifa_project.dim_league: Close
+[0m12:56:30.478755 [info ] [Thread-6 (]: 9 of 9 OK created sql table model fifa_project_dbt.fct_match_results ........... [[32mOK[0m in 21.63s]
+[0m12:56:30.478755 [info ] [Thread-7 (]: 6 of 9 OK created sql table model fifa_project_dbt.dim_player .................. [[32mOK[0m in 23.65s]
+[0m12:56:30.478755 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f16506-6ae3-12b1-be57-27079e9d5206) - Closing
+[0m12:56:30.478755 [debug] [Thread-6 (]: Finished running node model.fifa_project.fct_match_results
+[0m12:56:30.478755 [debug] [Thread-7 (]: Finished running node model.fifa_project.dim_player
+[0m12:56:30.594374 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16f16a83-4690-4e40-900d-ecde9c5524c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE7A085790>]}
+[0m12:56:30.594374 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16f16a83-4690-4e40-900d-ecde9c5524c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE53217C50>]}
+[0m12:56:30.594374 [info ] [Thread-4 (]: 8 of 9 OK created sql table model fifa_project_dbt.dim_team .................... [[32mOK[0m in 21.74s]
+[0m12:56:30.594374 [info ] [Thread-5 (]: 7 of 9 OK created sql table model fifa_project_dbt.dim_league .................. [[32mOK[0m in 23.77s]
+[0m12:56:30.594374 [debug] [Thread-4 (]: Finished running node model.fifa_project.dim_team
+[0m12:56:30.594374 [debug] [Thread-5 (]: Finished running node model.fifa_project.dim_league
+[0m12:56:30.594374 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m12:56:30.594374 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m12:56:30.604299 [info ] [MainThread]: 
+[0m12:56:30.604299 [info ] [MainThread]: Finished running 4 table models, 5 view models in 0 hours 0 minutes and 34.67 seconds (34.67s).
+[0m12:56:30.604299 [debug] [MainThread]: Command end result
+[0m12:56:30.649311 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\hasmi\Downloads\fifa_dbt_project\fifa_dbt_project\target\manifest.json
+[0m12:56:30.651062 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\hasmi\Downloads\fifa_dbt_project\fifa_dbt_project\target\semantic_manifest.json
+[0m12:56:30.659408 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\hasmi\Downloads\fifa_dbt_project\fifa_dbt_project\target\run_results.json
+[0m12:56:30.661417 [info ] [MainThread]: 
+[0m12:56:30.661417 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:56:30.661417 [info ] [MainThread]: 
+[0m12:56:30.661417 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=9
+[0m12:56:30.663428 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 3 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m12:56:30.663428 [debug] [MainThread]: Command `dbt run` succeeded at 12:56:30.663428 after 41.61 seconds
+[0m12:56:30.665439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE4F715150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE54BB2810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE4F7D7790>]}
+[0m12:56:30.665439 [debug] [MainThread]: Flushing usage events
+[0m12:56:31.258779 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:58:33.310259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF529B0FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF51901E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF529A5350>]}
+
+
+============================== 12:58:33.317519 | ea79481a-e691-476a-95a4-e85c07ccf851 ==============================
+[0m12:58:33.317519 [info ] [MainThread]: Running with dbt=1.11.11
+[0m12:58:33.317519 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\hasmi\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt test', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\hasmi\\Downloads\\fifa_dbt_project\\fifa_dbt_project\\logs'}
+[0m12:58:34.216807 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m12:58:34.219325 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m12:58:34.219325 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m12:58:35.237872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ea79481a-e691-476a-95a4-e85c07ccf851', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF75456B90>]}
+[0m12:58:35.285734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ea79481a-e691-476a-95a4-e85c07ccf851', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF509C2950>]}
+[0m12:58:35.285734 [info ] [MainThread]: Registered adapter: databricks=1.12.1
+[0m12:58:35.767352 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m12:58:35.966298 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m12:58:35.966298 [debug] [MainThread]: Partial parsing: updated file: fifa_project://models\marts\schema.yml
+[0m12:58:36.352539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ea79481a-e691-476a-95a4-e85c07ccf851', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF76E8BD10>]}
+[0m12:58:36.480750 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\hasmi\Downloads\fifa_dbt_project\fifa_dbt_project\target\manifest.json
+[0m12:58:36.482130 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\hasmi\Downloads\fifa_dbt_project\fifa_dbt_project\target\semantic_manifest.json
+[0m12:58:36.507003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ea79481a-e691-476a-95a4-e85c07ccf851', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF7709FF90>]}
+[0m12:58:36.508090 [info ] [MainThread]: Found 9 models, 1 snapshot, 11 data tests, 5 sources, 758 macros
+[0m12:58:36.509097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ea79481a-e691-476a-95a4-e85c07ccf851', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF76DE9050>]}
+[0m12:58:36.509097 [info ] [MainThread]: 
+[0m12:58:36.512262 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:58:36.512262 [info ] [MainThread]: 
+[0m12:58:36.512262 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m12:58:36.512262 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m12:58:36.512262 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace_fifa_project_dbt) - Creating connection
+[0m12:58:36.512262 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace_fifa_project_dbt_snapshots) - Creating connection
+[0m12:58:36.512262 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace_fifa_project_dbt'
+[0m12:58:36.512262 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace_fifa_project_dbt_snapshots'
+[0m12:58:36.529563 [debug] [ThreadPool]: Using databricks connection "list_workspace_fifa_project_dbt"
+[0m12:58:36.529563 [debug] [ThreadPool]: Using databricks connection "list_workspace_fifa_project_dbt_snapshots"
+[0m12:58:36.529563 [debug] [ThreadPool]: On list_workspace_fifa_project_dbt: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "ea79481a-e691-476a-95a4-e85c07ccf851", "connection_name": "list_workspace_fifa_project_dbt"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'workspace'
+  AND table_schema = 'fifa_project_dbt'
+
+  
+[0m12:58:36.529563 [debug] [ThreadPool]: On list_workspace_fifa_project_dbt_snapshots: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "ea79481a-e691-476a-95a4-e85c07ccf851", "connection_name": "list_workspace_fifa_project_dbt_snapshots"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'workspace'
+  AND table_schema = 'fifa_project_dbt_snapshots'
+
+  
+[0m12:58:36.529563 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:58:36.529563 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:58:38.579907 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16506-c4da-1903-82f5-b0f293e7b86c) - Created
+[0m12:58:38.579907 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16506-c4da-1423-b42b-8ec7ca743287) - Created
+[0m12:58:39.309420 [debug] [ThreadPool]: SQL status: OK in 2.780 seconds
+[0m12:58:39.328853 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f16506-c4da-1903-82f5-b0f293e7b86c, command-id=01f16506-c517-1fa8-ab1e-4be44d75f29e) - Closing
+[0m12:58:39.328853 [debug] [ThreadPool]: On list_workspace_fifa_project_dbt_snapshots: Close
+[0m12:58:39.328853 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16506-c4da-1903-82f5-b0f293e7b86c) - Closing
+[0m12:58:39.499990 [debug] [ThreadPool]: SQL status: OK in 2.970 seconds
+[0m12:58:39.502442 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f16506-c4da-1423-b42b-8ec7ca743287, command-id=01f16506-c517-1eb5-8664-e0ff80611077) - Closing
+[0m12:58:39.502442 [debug] [ThreadPool]: On list_workspace_fifa_project_dbt: Close
+[0m12:58:39.502442 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16506-c4da-1423-b42b-8ec7ca743287) - Closing
+[0m12:58:39.628347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ea79481a-e691-476a-95a4-e85c07ccf851', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF76E2A1D0>]}
+[0m12:58:39.644307 [debug] [Thread-2 (]: Began running node test.fifa_project.accepted_values_fct_match_results_result__HOME_WIN__AWAY_WIN__DRAW.6ec345f64e
+[0m12:58:39.644307 [debug] [Thread-3 (]: Began running node test.fifa_project.not_null_dim_league_league_id.02af76778d
+[0m12:58:39.644307 [debug] [Thread-4 (]: Began running node test.fifa_project.not_null_dim_player_player_api_id.1eb90b0b87
+[0m12:58:39.644307 [debug] [Thread-5 (]: Began running node test.fifa_project.not_null_dim_team_team_api_id.d9fdb02064
+[0m12:58:39.646077 [info ] [Thread-2 (]: 1 of 11 START test accepted_values_fct_match_results_result__HOME_WIN__AWAY_WIN__DRAW  [RUN]
+[0m12:58:39.646077 [info ] [Thread-3 (]: 2 of 11 START test not_null_dim_league_league_id ............................... [RUN]
+[0m12:58:39.646077 [info ] [Thread-4 (]: 3 of 11 START test not_null_dim_player_player_api_id ........................... [RUN]
+[0m12:58:39.646077 [info ] [Thread-5 (]: 4 of 11 START test not_null_dim_team_team_api_id ............................... [RUN]
+[0m12:58:39.646077 [debug] [Thread-2 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.fifa_project.accepted_values_fct_match_results_result__HOME_WIN__AWAY_WIN__DRAW.6ec345f64e) - Creating connection
+[0m12:58:39.646077 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.fifa_project.not_null_dim_league_league_id.02af76778d) - Creating connection
+[0m12:58:39.646077 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.fifa_project.not_null_dim_player_player_api_id.1eb90b0b87) - Creating connection
+[0m12:58:39.646077 [debug] [Thread-5 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.fifa_project.not_null_dim_team_team_api_id.d9fdb02064) - Creating connection
+[0m12:58:39.646077 [debug] [Thread-2 (]: Acquiring new databricks connection 'test.fifa_project.accepted_values_fct_match_results_result__HOME_WIN__AWAY_WIN__DRAW.6ec345f64e'
+[0m12:58:39.646077 [debug] [Thread-3 (]: Acquiring new databricks connection 'test.fifa_project.not_null_dim_league_league_id.02af76778d'
+[0m12:58:39.646077 [debug] [Thread-4 (]: Acquiring new databricks connection 'test.fifa_project.not_null_dim_player_player_api_id.1eb90b0b87'
+[0m12:58:39.646077 [debug] [Thread-5 (]: Acquiring new databricks connection 'test.fifa_project.not_null_dim_team_team_api_id.d9fdb02064'
+[0m12:58:39.646077 [debug] [Thread-2 (]: Began compiling node test.fifa_project.accepted_values_fct_match_results_result__HOME_WIN__AWAY_WIN__DRAW.6ec345f64e
+[0m12:58:39.646077 [debug] [Thread-3 (]: Began compiling node test.fifa_project.not_null_dim_league_league_id.02af76778d
+[0m12:58:39.646077 [debug] [Thread-4 (]: Began compiling node test.fifa_project.not_null_dim_player_player_api_id.1eb90b0b87
+[0m12:58:39.646077 [debug] [Thread-5 (]: Began compiling node test.fifa_project.not_null_dim_team_team_api_id.d9fdb02064
+[0m12:58:39.660323 [debug] [Thread-2 (]: Writing injected SQL for node "test.fifa_project.accepted_values_fct_match_results_result__HOME_WIN__AWAY_WIN__DRAW.6ec345f64e"
+[0m12:58:39.660323 [debug] [Thread-3 (]: Writing injected SQL for node "test.fifa_project.not_null_dim_league_league_id.02af76778d"
+[0m12:58:39.660323 [debug] [Thread-4 (]: Writing injected SQL for node "test.fifa_project.not_null_dim_player_player_api_id.1eb90b0b87"
+[0m12:58:39.676255 [debug] [Thread-5 (]: Writing injected SQL for node "test.fifa_project.not_null_dim_team_team_api_id.d9fdb02064"
+[0m12:58:39.676255 [debug] [Thread-3 (]: Began executing node test.fifa_project.not_null_dim_league_league_id.02af76778d
+[0m12:58:39.680904 [debug] [Thread-2 (]: Began executing node test.fifa_project.accepted_values_fct_match_results_result__HOME_WIN__AWAY_WIN__DRAW.6ec345f64e
+[0m12:58:39.692358 [debug] [Thread-3 (]: Writing runtime sql for node "test.fifa_project.not_null_dim_league_league_id.02af76778d"
+[0m12:58:39.692358 [debug] [Thread-2 (]: Writing runtime sql for node "test.fifa_project.accepted_values_fct_match_results_result__HOME_WIN__AWAY_WIN__DRAW.6ec345f64e"
+[0m12:58:39.692358 [debug] [Thread-4 (]: Began executing node test.fifa_project.not_null_dim_player_player_api_id.1eb90b0b87
+[0m12:58:39.692358 [debug] [Thread-5 (]: Began executing node test.fifa_project.not_null_dim_team_team_api_id.d9fdb02064
+[0m12:58:39.692358 [debug] [Thread-4 (]: Writing runtime sql for node "test.fifa_project.not_null_dim_player_player_api_id.1eb90b0b87"
+[0m12:58:39.708362 [debug] [Thread-3 (]: Using databricks connection "test.fifa_project.not_null_dim_league_league_id.02af76778d"
+[0m12:58:39.708362 [debug] [Thread-2 (]: Using databricks connection "test.fifa_project.accepted_values_fct_match_results_result__HOME_WIN__AWAY_WIN__DRAW.6ec345f64e"
+[0m12:58:39.709435 [debug] [Thread-5 (]: Writing runtime sql for node "test.fifa_project.not_null_dim_team_team_api_id.d9fdb02064"
+[0m12:58:39.709435 [debug] [Thread-3 (]: On test.fifa_project.not_null_dim_league_league_id.02af76778d: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "ea79481a-e691-476a-95a4-e85c07ccf851", "node_id": "test.fifa_project.not_null_dim_league_league_id.02af76778d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select league_id
+from `workspace`.`fifa_project_dbt`.`dim_league`
+where league_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:58:39.709435 [debug] [Thread-4 (]: Using databricks connection "test.fifa_project.not_null_dim_player_player_api_id.1eb90b0b87"
+[0m12:58:39.709435 [debug] [Thread-2 (]: On test.fifa_project.accepted_values_fct_match_results_result__HOME_WIN__AWAY_WIN__DRAW.6ec345f64e: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "ea79481a-e691-476a-95a4-e85c07ccf851", "node_id": "test.fifa_project.accepted_values_fct_match_results_result__HOME_WIN__AWAY_WIN__DRAW.6ec345f64e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        result as value_field,
+        count(*) as n_records
+
+    from `workspace`.`fifa_project_dbt`.`fct_match_results`
+    group by result
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'HOME_WIN','AWAY_WIN','DRAW'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:58:39.709435 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m12:58:39.709435 [debug] [Thread-4 (]: On test.fifa_project.not_null_dim_player_player_api_id.1eb90b0b87: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "ea79481a-e691-476a-95a4-e85c07ccf851", "node_id": "test.fifa_project.not_null_dim_player_player_api_id.1eb90b0b87"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select player_api_id
+from `workspace`.`fifa_project_dbt`.`dim_player`
+where player_api_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:58:39.709435 [debug] [Thread-5 (]: Using databricks connection "test.fifa_project.not_null_dim_team_team_api_id.d9fdb02064"
+[0m12:58:39.709435 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m12:58:39.709435 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m12:58:39.709435 [debug] [Thread-5 (]: On test.fifa_project.not_null_dim_team_team_api_id.d9fdb02064: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "ea79481a-e691-476a-95a4-e85c07ccf851", "node_id": "test.fifa_project.not_null_dim_team_team_api_id.d9fdb02064"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select team_api_id
+from `workspace`.`fifa_project_dbt`.`dim_team`
+where team_api_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:58:39.740148 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m12:58:40.139964 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f16506-c5f4-13e3-9c69-44c923126955) - Created
+[0m12:58:40.187287 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f16506-c5fd-153c-9d45-ee70ed3e14d3) - Created
+[0m12:58:40.218798 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f16506-c604-1024-a0f6-8fd5b1354224) - Created
+[0m12:58:40.218798 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f16506-c603-1c13-93e5-9fea7aa9cf11) - Created
+[0m12:58:42.256419 [debug] [Thread-3 (]: SQL status: OK in 2.550 seconds
+[0m12:58:42.262441 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f16506-c5f4-13e3-9c69-44c923126955, command-id=01f16506-c607-114c-9c0f-408ca25c967e) - Closing
+[0m12:58:42.267962 [debug] [Thread-3 (]: On test.fifa_project.not_null_dim_league_league_id.02af76778d: Close
+[0m12:58:42.267962 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f16506-c5f4-13e3-9c69-44c923126955) - Closing
+[0m12:58:42.382420 [info ] [Thread-3 (]: 2 of 11 PASS not_null_dim_league_league_id ..................................... [[32mPASS[0m in 2.74s]
+[0m12:58:42.384423 [debug] [Thread-3 (]: Finished running node test.fifa_project.not_null_dim_league_league_id.02af76778d
+[0m12:58:42.384423 [debug] [Thread-3 (]: Began running node test.fifa_project.not_null_fct_match_results_match_api_id.3dbe7fc94e
+[0m12:58:42.386430 [info ] [Thread-3 (]: 5 of 11 START test not_null_fct_match_results_match_api_id ..................... [RUN]
+[0m12:58:42.386430 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.fifa_project.not_null_fct_match_results_match_api_id.3dbe7fc94e) - Creating connection
+[0m12:58:42.386430 [debug] [Thread-3 (]: Acquiring new databricks connection 'test.fifa_project.not_null_fct_match_results_match_api_id.3dbe7fc94e'
+[0m12:58:42.388435 [debug] [Thread-3 (]: Began compiling node test.fifa_project.not_null_fct_match_results_match_api_id.3dbe7fc94e
+[0m12:58:42.392442 [debug] [Thread-3 (]: Writing injected SQL for node "test.fifa_project.not_null_fct_match_results_match_api_id.3dbe7fc94e"
+[0m12:58:42.394186 [debug] [Thread-3 (]: Began executing node test.fifa_project.not_null_fct_match_results_match_api_id.3dbe7fc94e
+[0m12:58:42.396191 [debug] [Thread-3 (]: Writing runtime sql for node "test.fifa_project.not_null_fct_match_results_match_api_id.3dbe7fc94e"
+[0m12:58:42.398195 [debug] [Thread-3 (]: Using databricks connection "test.fifa_project.not_null_fct_match_results_match_api_id.3dbe7fc94e"
+[0m12:58:42.398195 [debug] [Thread-3 (]: On test.fifa_project.not_null_fct_match_results_match_api_id.3dbe7fc94e: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "ea79481a-e691-476a-95a4-e85c07ccf851", "node_id": "test.fifa_project.not_null_fct_match_results_match_api_id.3dbe7fc94e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select match_api_id
+from `workspace`.`fifa_project_dbt`.`fct_match_results`
+where match_api_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:58:42.398195 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m12:58:42.504948 [debug] [Thread-5 (]: SQL status: OK in 2.760 seconds
+[0m12:58:42.504948 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f16506-c604-1024-a0f6-8fd5b1354224, command-id=01f16506-c612-1bd4-a54c-6724eea85ea3) - Closing
+[0m12:58:42.504948 [debug] [Thread-5 (]: On test.fifa_project.not_null_dim_team_team_api_id.d9fdb02064: Close
+[0m12:58:42.504948 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f16506-c604-1024-a0f6-8fd5b1354224) - Closing
+[0m12:58:42.633770 [info ] [Thread-5 (]: 4 of 11 PASS not_null_dim_team_team_api_id ..................................... [[32mPASS[0m in 2.99s]
+[0m12:58:42.635774 [debug] [Thread-5 (]: Finished running node test.fifa_project.not_null_dim_team_team_api_id.d9fdb02064
+[0m12:58:42.635774 [debug] [Thread-5 (]: Began running node test.fifa_project.relationships_fct_match_results_away_team_api_id__team_api_id__ref_dim_team_.a1eb4ac53f
+[0m12:58:42.635774 [info ] [Thread-5 (]: 6 of 11 START test relationships_fct_match_results_away_team_api_id__team_api_id__ref_dim_team_  [RUN]
+[0m12:58:42.637778 [debug] [Thread-5 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.fifa_project.relationships_fct_match_results_away_team_api_id__team_api_id__ref_dim_team_.a1eb4ac53f) - Creating connection
+[0m12:58:42.637778 [debug] [Thread-5 (]: Acquiring new databricks connection 'test.fifa_project.relationships_fct_match_results_away_team_api_id__team_api_id__ref_dim_team_.a1eb4ac53f'
+[0m12:58:42.637778 [debug] [Thread-5 (]: Began compiling node test.fifa_project.relationships_fct_match_results_away_team_api_id__team_api_id__ref_dim_team_.a1eb4ac53f
+[0m12:58:42.643787 [debug] [Thread-5 (]: Writing injected SQL for node "test.fifa_project.relationships_fct_match_results_away_team_api_id__team_api_id__ref_dim_team_.a1eb4ac53f"
+[0m12:58:42.643787 [debug] [Thread-5 (]: Began executing node test.fifa_project.relationships_fct_match_results_away_team_api_id__team_api_id__ref_dim_team_.a1eb4ac53f
+[0m12:58:42.647539 [debug] [Thread-5 (]: Writing runtime sql for node "test.fifa_project.relationships_fct_match_results_away_team_api_id__team_api_id__ref_dim_team_.a1eb4ac53f"
+[0m12:58:42.647539 [debug] [Thread-5 (]: Using databricks connection "test.fifa_project.relationships_fct_match_results_away_team_api_id__team_api_id__ref_dim_team_.a1eb4ac53f"
+[0m12:58:42.649547 [debug] [Thread-5 (]: On test.fifa_project.relationships_fct_match_results_away_team_api_id__team_api_id__ref_dim_team_.a1eb4ac53f: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "ea79481a-e691-476a-95a4-e85c07ccf851", "node_id": "test.fifa_project.relationships_fct_match_results_away_team_api_id__team_api_id__ref_dim_team_.a1eb4ac53f"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select away_team_api_id as from_field
+    from `workspace`.`fifa_project_dbt`.`fct_match_results`
+    where away_team_api_id is not null
+),
+
+parent as (
+    select team_api_id as to_field
+    from `workspace`.`fifa_project_dbt`.`dim_team`
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:58:42.649547 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m12:58:42.775746 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f16506-c78a-1696-9967-a17503ffc419) - Created
+[0m12:58:42.790280 [debug] [Thread-4 (]: SQL status: OK in 3.080 seconds
+[0m12:58:42.790280 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f16506-c5fd-153c-9d45-ee70ed3e14d3, command-id=01f16506-c60c-1602-aa3e-0c9f87c79190) - Closing
+[0m12:58:42.790280 [debug] [Thread-4 (]: On test.fifa_project.not_null_dim_player_player_api_id.1eb90b0b87: Close
+[0m12:58:42.790280 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f16506-c5fd-153c-9d45-ee70ed3e14d3) - Closing
+[0m12:58:42.922454 [info ] [Thread-4 (]: 3 of 11 PASS not_null_dim_player_player_api_id ................................. [[32mPASS[0m in 3.28s]
+[0m12:58:42.924459 [debug] [Thread-4 (]: Finished running node test.fifa_project.not_null_dim_player_player_api_id.1eb90b0b87
+[0m12:58:42.924459 [debug] [Thread-4 (]: Began running node test.fifa_project.relationships_fct_match_results_home_team_api_id__team_api_id__ref_dim_team_.4bd52721d7
+[0m12:58:42.924459 [info ] [Thread-4 (]: 7 of 11 START test relationships_fct_match_results_home_team_api_id__team_api_id__ref_dim_team_  [RUN]
+[0m12:58:42.926464 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.fifa_project.relationships_fct_match_results_home_team_api_id__team_api_id__ref_dim_team_.4bd52721d7) - Creating connection
+[0m12:58:42.926464 [debug] [Thread-4 (]: Acquiring new databricks connection 'test.fifa_project.relationships_fct_match_results_home_team_api_id__team_api_id__ref_dim_team_.4bd52721d7'
+[0m12:58:42.926464 [debug] [Thread-4 (]: Began compiling node test.fifa_project.relationships_fct_match_results_home_team_api_id__team_api_id__ref_dim_team_.4bd52721d7
+[0m12:58:42.946264 [debug] [Thread-4 (]: Writing injected SQL for node "test.fifa_project.relationships_fct_match_results_home_team_api_id__team_api_id__ref_dim_team_.4bd52721d7"
+[0m12:58:42.948013 [debug] [Thread-4 (]: Began executing node test.fifa_project.relationships_fct_match_results_home_team_api_id__team_api_id__ref_dim_team_.4bd52721d7
+[0m12:58:42.952026 [debug] [Thread-4 (]: Writing runtime sql for node "test.fifa_project.relationships_fct_match_results_home_team_api_id__team_api_id__ref_dim_team_.4bd52721d7"
+[0m12:58:42.952026 [debug] [Thread-4 (]: Using databricks connection "test.fifa_project.relationships_fct_match_results_home_team_api_id__team_api_id__ref_dim_team_.4bd52721d7"
+[0m12:58:42.952026 [debug] [Thread-4 (]: On test.fifa_project.relationships_fct_match_results_home_team_api_id__team_api_id__ref_dim_team_.4bd52721d7: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "ea79481a-e691-476a-95a4-e85c07ccf851", "node_id": "test.fifa_project.relationships_fct_match_results_home_team_api_id__team_api_id__ref_dim_team_.4bd52721d7"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select home_team_api_id as from_field
+    from `workspace`.`fifa_project_dbt`.`fct_match_results`
+    where home_team_api_id is not null
+),
+
+parent as (
+    select team_api_id as to_field
+    from `workspace`.`fifa_project_dbt`.`dim_team`
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:58:42.954033 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m12:58:43.001381 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f16506-c7ab-1a93-99d6-e1859b41d8d9) - Created
+[0m12:58:43.090068 [debug] [Thread-2 (]: SQL status: OK in 3.380 seconds
+[0m12:58:43.090068 [debug] [Thread-2 (]: Databricks adapter: Cursor(session-id=01f16506-c603-1c13-93e5-9fea7aa9cf11, command-id=01f16506-c613-1342-9e98-046cc7c42663) - Closing
+[0m12:58:43.090068 [debug] [Thread-2 (]: On test.fifa_project.accepted_values_fct_match_results_result__HOME_WIN__AWAY_WIN__DRAW.6ec345f64e: Close
+[0m12:58:43.090068 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f16506-c603-1c13-93e5-9fea7aa9cf11) - Closing
+[0m12:58:43.216958 [info ] [Thread-2 (]: 1 of 11 PASS accepted_values_fct_match_results_result__HOME_WIN__AWAY_WIN__DRAW  [[32mPASS[0m in 3.57s]
+[0m12:58:43.216958 [debug] [Thread-2 (]: Finished running node test.fifa_project.accepted_values_fct_match_results_result__HOME_WIN__AWAY_WIN__DRAW.6ec345f64e
+[0m12:58:43.216958 [debug] [Thread-2 (]: Began running node test.fifa_project.unique_dim_league_league_id.44767370b7
+[0m12:58:43.216958 [info ] [Thread-2 (]: 8 of 11 START test unique_dim_league_league_id ................................. [RUN]
+[0m12:58:43.216958 [debug] [Thread-2 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.fifa_project.unique_dim_league_league_id.44767370b7) - Creating connection
+[0m12:58:43.216958 [debug] [Thread-2 (]: Acquiring new databricks connection 'test.fifa_project.unique_dim_league_league_id.44767370b7'
+[0m12:58:43.216958 [debug] [Thread-2 (]: Began compiling node test.fifa_project.unique_dim_league_league_id.44767370b7
+[0m12:58:43.216958 [debug] [Thread-2 (]: Writing injected SQL for node "test.fifa_project.unique_dim_league_league_id.44767370b7"
+[0m12:58:43.216958 [debug] [Thread-2 (]: Began executing node test.fifa_project.unique_dim_league_league_id.44767370b7
+[0m12:58:43.234180 [debug] [Thread-2 (]: Writing runtime sql for node "test.fifa_project.unique_dim_league_league_id.44767370b7"
+[0m12:58:43.234180 [debug] [Thread-2 (]: Using databricks connection "test.fifa_project.unique_dim_league_league_id.44767370b7"
+[0m12:58:43.234180 [debug] [Thread-2 (]: On test.fifa_project.unique_dim_league_league_id.44767370b7: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "ea79481a-e691-476a-95a4-e85c07ccf851", "node_id": "test.fifa_project.unique_dim_league_league_id.44767370b7"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    league_id as unique_field,
+    count(*) as n_records
+
+from `workspace`.`fifa_project_dbt`.`dim_league`
+where league_id is not null
+group by league_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:58:43.234180 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m12:58:43.313634 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f16506-c7db-1d87-9ac4-88c3121ad688) - Created
+[0m12:58:43.584430 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f16506-c804-1fc7-a73d-4cf36013957c) - Created
+[0m12:58:44.912389 [debug] [Thread-3 (]: SQL status: OK in 2.510 seconds
+[0m12:58:44.912389 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f16506-c78a-1696-9967-a17503ffc419, command-id=01f16506-c799-1ba9-a183-b992267b00dc) - Closing
+[0m12:58:44.912389 [debug] [Thread-3 (]: On test.fifa_project.not_null_fct_match_results_match_api_id.3dbe7fc94e: Close
+[0m12:58:44.912389 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f16506-c78a-1696-9967-a17503ffc419) - Closing
+[0m12:58:45.022897 [info ] [Thread-3 (]: 5 of 11 PASS not_null_fct_match_results_match_api_id ........................... [[32mPASS[0m in 2.64s]
+[0m12:58:45.038571 [debug] [Thread-3 (]: Finished running node test.fifa_project.not_null_fct_match_results_match_api_id.3dbe7fc94e
+[0m12:58:45.038571 [debug] [Thread-3 (]: Began running node test.fifa_project.unique_dim_player_player_api_id.0310e9bfe9
+[0m12:58:45.039838 [info ] [Thread-3 (]: 9 of 11 START test unique_dim_player_player_api_id ............................. [RUN]
+[0m12:58:45.039838 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.fifa_project.unique_dim_player_player_api_id.0310e9bfe9) - Creating connection
+[0m12:58:45.039838 [debug] [Thread-3 (]: Acquiring new databricks connection 'test.fifa_project.unique_dim_player_player_api_id.0310e9bfe9'
+[0m12:58:45.039838 [debug] [Thread-3 (]: Began compiling node test.fifa_project.unique_dim_player_player_api_id.0310e9bfe9
+[0m12:58:45.039838 [debug] [Thread-3 (]: Writing injected SQL for node "test.fifa_project.unique_dim_player_player_api_id.0310e9bfe9"
+[0m12:58:45.039838 [debug] [Thread-3 (]: Began executing node test.fifa_project.unique_dim_player_player_api_id.0310e9bfe9
+[0m12:58:45.049350 [debug] [Thread-3 (]: Writing runtime sql for node "test.fifa_project.unique_dim_player_player_api_id.0310e9bfe9"
+[0m12:58:45.049350 [debug] [Thread-3 (]: Using databricks connection "test.fifa_project.unique_dim_player_player_api_id.0310e9bfe9"
+[0m12:58:45.049350 [debug] [Thread-3 (]: On test.fifa_project.unique_dim_player_player_api_id.0310e9bfe9: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "ea79481a-e691-476a-95a4-e85c07ccf851", "node_id": "test.fifa_project.unique_dim_player_player_api_id.0310e9bfe9"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    player_api_id as unique_field,
+    count(*) as n_records
+
+from `workspace`.`fifa_project_dbt`.`dim_player`
+where player_api_id is not null
+group by player_api_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:58:45.049350 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m12:58:45.417637 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f16506-c91a-1e89-8b5e-a11e26cd1c7b) - Created
+[0m12:58:46.181169 [debug] [Thread-2 (]: SQL status: OK in 2.950 seconds
+[0m12:58:46.183182 [debug] [Thread-2 (]: Databricks adapter: Cursor(session-id=01f16506-c804-1fc7-a73d-4cf36013957c, command-id=01f16506-c813-125b-8c2f-0a19734af385) - Closing
+[0m12:58:46.185185 [debug] [Thread-2 (]: On test.fifa_project.unique_dim_league_league_id.44767370b7: Close
+[0m12:58:46.185185 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f16506-c804-1fc7-a73d-4cf36013957c) - Closing
+[0m12:58:46.305500 [info ] [Thread-2 (]: 8 of 11 PASS unique_dim_league_league_id ....................................... [[32mPASS[0m in 3.09s]
+[0m12:58:46.305500 [debug] [Thread-2 (]: Finished running node test.fifa_project.unique_dim_league_league_id.44767370b7
+[0m12:58:46.305500 [debug] [Thread-2 (]: Began running node test.fifa_project.unique_dim_team_team_api_id.380f3fa8a4
+[0m12:58:46.305500 [info ] [Thread-2 (]: 10 of 11 START test unique_dim_team_team_api_id ................................ [RUN]
+[0m12:58:46.305500 [debug] [Thread-2 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.fifa_project.unique_dim_team_team_api_id.380f3fa8a4) - Creating connection
+[0m12:58:46.305500 [debug] [Thread-2 (]: Acquiring new databricks connection 'test.fifa_project.unique_dim_team_team_api_id.380f3fa8a4'
+[0m12:58:46.305500 [debug] [Thread-2 (]: Began compiling node test.fifa_project.unique_dim_team_team_api_id.380f3fa8a4
+[0m12:58:46.320026 [debug] [Thread-2 (]: Writing injected SQL for node "test.fifa_project.unique_dim_team_team_api_id.380f3fa8a4"
+[0m12:58:46.320026 [debug] [Thread-2 (]: Began executing node test.fifa_project.unique_dim_team_team_api_id.380f3fa8a4
+[0m12:58:46.328559 [debug] [Thread-2 (]: Writing runtime sql for node "test.fifa_project.unique_dim_team_team_api_id.380f3fa8a4"
+[0m12:58:46.330565 [debug] [Thread-2 (]: Using databricks connection "test.fifa_project.unique_dim_team_team_api_id.380f3fa8a4"
+[0m12:58:46.330565 [debug] [Thread-2 (]: On test.fifa_project.unique_dim_team_team_api_id.380f3fa8a4: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "ea79481a-e691-476a-95a4-e85c07ccf851", "node_id": "test.fifa_project.unique_dim_team_team_api_id.380f3fa8a4"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    team_api_id as unique_field,
+    count(*) as n_records
+
+from `workspace`.`fifa_project_dbt`.`dim_team`
+where team_api_id is not null
+group by team_api_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:58:46.330565 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m12:58:46.703453 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f16506-c9df-1532-99ed-4d745039b2b8) - Created
+[0m12:58:47.099429 [debug] [Thread-4 (]: SQL status: OK in 4.150 seconds
+[0m12:58:47.099429 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f16506-c7db-1d87-9ac4-88c3121ad688, command-id=01f16506-c7eb-1217-8a04-9eeb78c704f7) - Closing
+[0m12:58:47.099429 [debug] [Thread-4 (]: On test.fifa_project.relationships_fct_match_results_home_team_api_id__team_api_id__ref_dim_team_.4bd52721d7: Close
+[0m12:58:47.099429 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f16506-c7db-1d87-9ac4-88c3121ad688) - Closing
+[0m12:58:47.213016 [debug] [Thread-5 (]: SQL status: OK in 4.560 seconds
+[0m12:58:47.215020 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f16506-c7ab-1a93-99d6-e1859b41d8d9, command-id=01f16506-c7ba-149d-a76b-ccf0936ee1c9) - Closing
+[0m12:58:47.240541 [debug] [Thread-5 (]: On test.fifa_project.relationships_fct_match_results_away_team_api_id__team_api_id__ref_dim_team_.a1eb4ac53f: Close
+[0m12:58:47.240541 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f16506-c7ab-1a93-99d6-e1859b41d8d9) - Closing
+[0m12:58:47.368421 [info ] [Thread-4 (]: 7 of 11 PASS relationships_fct_match_results_home_team_api_id__team_api_id__ref_dim_team_  [[32mPASS[0m in 4.44s]
+[0m12:58:47.368421 [info ] [Thread-5 (]: 6 of 11 PASS relationships_fct_match_results_away_team_api_id__team_api_id__ref_dim_team_  [[32mPASS[0m in 4.73s]
+[0m12:58:47.368421 [debug] [Thread-4 (]: Finished running node test.fifa_project.relationships_fct_match_results_home_team_api_id__team_api_id__ref_dim_team_.4bd52721d7
+[0m12:58:47.368421 [debug] [Thread-5 (]: Finished running node test.fifa_project.relationships_fct_match_results_away_team_api_id__team_api_id__ref_dim_team_.a1eb4ac53f
+[0m12:58:47.368421 [debug] [Thread-4 (]: Began running node test.fifa_project.unique_fct_match_results_match_api_id.2c7600e623
+[0m12:58:47.368421 [info ] [Thread-4 (]: 11 of 11 START test unique_fct_match_results_match_api_id ...................... [RUN]
+[0m12:58:47.368421 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.fifa_project.unique_fct_match_results_match_api_id.2c7600e623) - Creating connection
+[0m12:58:47.368421 [debug] [Thread-4 (]: Acquiring new databricks connection 'test.fifa_project.unique_fct_match_results_match_api_id.2c7600e623'
+[0m12:58:47.368421 [debug] [Thread-4 (]: Began compiling node test.fifa_project.unique_fct_match_results_match_api_id.2c7600e623
+[0m12:58:47.368421 [debug] [Thread-4 (]: Writing injected SQL for node "test.fifa_project.unique_fct_match_results_match_api_id.2c7600e623"
+[0m12:58:47.368421 [debug] [Thread-4 (]: Began executing node test.fifa_project.unique_fct_match_results_match_api_id.2c7600e623
+[0m12:58:47.384385 [debug] [Thread-4 (]: Writing runtime sql for node "test.fifa_project.unique_fct_match_results_match_api_id.2c7600e623"
+[0m12:58:47.385552 [debug] [Thread-4 (]: Using databricks connection "test.fifa_project.unique_fct_match_results_match_api_id.2c7600e623"
+[0m12:58:47.385552 [debug] [Thread-4 (]: On test.fifa_project.unique_fct_match_results_match_api_id.2c7600e623: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "ea79481a-e691-476a-95a4-e85c07ccf851", "node_id": "test.fifa_project.unique_fct_match_results_match_api_id.2c7600e623"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    match_api_id as unique_field,
+    count(*) as n_records
+
+from `workspace`.`fifa_project_dbt`.`fct_match_results`
+where match_api_id is not null
+group by match_api_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:58:47.386833 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m12:58:47.768831 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f16506-ca81-1047-95cf-4a9b52b6938b) - Created
+[0m12:58:49.023079 [debug] [Thread-3 (]: SQL status: OK in 3.970 seconds
+[0m12:58:49.023079 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f16506-c91a-1e89-8b5e-a11e26cd1c7b, command-id=01f16506-c92a-1897-a7e1-d9f28642a262) - Closing
+[0m12:58:49.023079 [debug] [Thread-3 (]: On test.fifa_project.unique_dim_player_player_api_id.0310e9bfe9: Close
+[0m12:58:49.023079 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f16506-c91a-1e89-8b5e-a11e26cd1c7b) - Closing
+[0m12:58:49.151594 [info ] [Thread-3 (]: 9 of 11 PASS unique_dim_player_player_api_id ................................... [[32mPASS[0m in 4.11s]
+[0m12:58:49.151594 [debug] [Thread-3 (]: Finished running node test.fifa_project.unique_dim_player_player_api_id.0310e9bfe9
+[0m12:58:49.485165 [debug] [Thread-2 (]: SQL status: OK in 3.150 seconds
+[0m12:58:49.485165 [debug] [Thread-2 (]: Databricks adapter: Cursor(session-id=01f16506-c9df-1532-99ed-4d745039b2b8, command-id=01f16506-c9ef-12f9-9b95-0df5359b405f) - Closing
+[0m12:58:49.485165 [debug] [Thread-2 (]: On test.fifa_project.unique_dim_team_team_api_id.380f3fa8a4: Close
+[0m12:58:49.485165 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f16506-c9df-1532-99ed-4d745039b2b8) - Closing
+[0m12:58:49.613696 [info ] [Thread-2 (]: 10 of 11 PASS unique_dim_team_team_api_id ...................................... [[32mPASS[0m in 3.31s]
+[0m12:58:49.613696 [debug] [Thread-2 (]: Finished running node test.fifa_project.unique_dim_team_team_api_id.380f3fa8a4
+[0m12:58:49.826318 [debug] [Thread-4 (]: SQL status: OK in 2.440 seconds
+[0m12:58:49.828322 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f16506-ca81-1047-95cf-4a9b52b6938b, command-id=01f16506-ca91-1cd9-a705-79b90a19b60f) - Closing
+[0m12:58:49.830327 [debug] [Thread-4 (]: On test.fifa_project.unique_fct_match_results_match_api_id.2c7600e623: Close
+[0m12:58:49.830327 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f16506-ca81-1047-95cf-4a9b52b6938b) - Closing
+[0m12:58:49.958274 [info ] [Thread-4 (]: 11 of 11 PASS unique_fct_match_results_match_api_id ............................ [[32mPASS[0m in 2.59s]
+[0m12:58:49.958274 [debug] [Thread-4 (]: Finished running node test.fifa_project.unique_fct_match_results_match_api_id.2c7600e623
+[0m12:58:49.962627 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m12:58:49.962627 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m12:58:49.964310 [info ] [MainThread]: 
+[0m12:58:49.964310 [info ] [MainThread]: Finished running 11 data tests in 0 hours 0 minutes and 13.45 seconds (13.45s).
+[0m12:58:49.965963 [debug] [MainThread]: Command end result
+[0m12:58:50.010205 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\hasmi\Downloads\fifa_dbt_project\fifa_dbt_project\target\manifest.json
+[0m12:58:50.010205 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\hasmi\Downloads\fifa_dbt_project\fifa_dbt_project\target\semantic_manifest.json
+[0m12:58:50.010205 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\hasmi\Downloads\fifa_dbt_project\fifa_dbt_project\target\run_results.json
+[0m12:58:50.010205 [info ] [MainThread]: 
+[0m12:58:50.010205 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:58:50.010205 [info ] [MainThread]: 
+[0m12:58:50.026272 [info ] [MainThread]: Done. PASS=11 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=11
+[0m12:58:50.026272 [debug] [MainThread]: Command `dbt test` succeeded at 12:58:50.026272 after 16.85 seconds
+[0m12:58:50.026272 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF4C4C5150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF52A76F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF4C587790>]}
+[0m12:58:50.026272 [debug] [MainThread]: Flushing usage events
+[0m12:58:50.548472 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:59:22.595448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203A75C0590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203A654AB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203A34E5750>]}
+
+
+============================== 12:59:22.607958 | 5ef7219d-a9d1-4bd4-90c3-bfbdd46ab84b ==============================
+[0m12:59:22.607958 [info ] [MainThread]: Running with dbt=1.11.11
+[0m12:59:22.607958 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\hasmi\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt snapshot', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\hasmi\\Downloads\\fifa_dbt_project\\fifa_dbt_project\\logs'}
+[0m12:59:23.514065 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m12:59:23.514065 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m12:59:23.514065 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m12:59:24.615476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5ef7219d-a9d1-4bd4-90c3-bfbdd46ab84b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203C94AB590>]}
+[0m12:59:24.664891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5ef7219d-a9d1-4bd4-90c3-bfbdd46ab84b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203A55D28D0>]}
+[0m12:59:24.664891 [info ] [MainThread]: Registered adapter: databricks=1.12.1
+[0m12:59:25.163484 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m12:59:25.367423 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:59:25.367423 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m12:59:25.367423 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:59:25.414811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ef7219d-a9d1-4bd4-90c3-bfbdd46ab84b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203CB642FD0>]}
+[0m12:59:25.527880 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\hasmi\Downloads\fifa_dbt_project\fifa_dbt_project\target\manifest.json
+[0m12:59:25.543872 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\hasmi\Downloads\fifa_dbt_project\fifa_dbt_project\target\semantic_manifest.json
+[0m12:59:25.543872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5ef7219d-a9d1-4bd4-90c3-bfbdd46ab84b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203CB3F1D90>]}
+[0m12:59:25.543872 [info ] [MainThread]: Found 9 models, 1 snapshot, 11 data tests, 5 sources, 758 macros
+[0m12:59:25.543872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5ef7219d-a9d1-4bd4-90c3-bfbdd46ab84b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203CB865010>]}
+[0m12:59:25.559677 [info ] [MainThread]: 
+[0m12:59:25.559677 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:59:25.559677 [info ] [MainThread]: 
+[0m12:59:25.559677 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m12:59:25.559677 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m12:59:25.559677 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace) - Creating connection
+[0m12:59:25.559677 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace'
+[0m12:59:25.575450 [debug] [ThreadPool]: Using databricks connection "list_workspace"
+[0m12:59:25.575450 [debug] [ThreadPool]: On list_workspace: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "5ef7219d-a9d1-4bd4-90c3-bfbdd46ab84b", "connection_name": "list_workspace"} */
+
+    
+
+  SHOW SCHEMAS IN `workspace`
+
+
+  
+[0m12:59:25.575450 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:59:27.391415 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16506-e1f1-1d2a-af53-fde2baf99ecb) - Created
+[0m12:59:27.835753 [debug] [ThreadPool]: SQL status: OK in 2.260 seconds
+[0m12:59:27.838341 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f16506-e1f1-1d2a-af53-fde2baf99ecb, command-id=01f16506-e230-1ffc-a918-5777f0a54693) - Closing
+[0m12:59:27.838341 [debug] [ThreadPool]: On list_workspace: Close
+[0m12:59:27.844454 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16506-e1f1-1d2a-af53-fde2baf99ecb) - Closing
+[0m12:59:27.949768 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=create_workspace_fifa_project_dbt_snapshots) - Creating connection
+[0m12:59:27.949768 [debug] [ThreadPool]: Acquiring new databricks connection 'create_workspace_fifa_project_dbt_snapshots'
+[0m12:59:27.949768 [debug] [ThreadPool]: Creating schema "database: "workspace"
+schema: "fifa_project_dbt_snapshots"
+"
+[0m12:59:27.949768 [debug] [ThreadPool]: Using databricks connection "create_workspace_fifa_project_dbt_snapshots"
+[0m12:59:27.949768 [debug] [ThreadPool]: On create_workspace_fifa_project_dbt_snapshots: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "5ef7219d-a9d1-4bd4-90c3-bfbdd46ab84b", "connection_name": "create_workspace_fifa_project_dbt_snapshots"} */
+create schema if not exists `workspace`.`fifa_project_dbt_snapshots`
+  
+[0m12:59:27.949768 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:59:28.333878 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16506-e2ae-1047-a5e3-1332ee161502) - Created
+[0m12:59:28.901505 [debug] [ThreadPool]: SQL status: OK in 0.950 seconds
+[0m12:59:28.917532 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f16506-e2ae-1047-a5e3-1332ee161502, command-id=01f16506-e2c0-11ee-b343-bf870b926353) - Closing
+[0m12:59:28.917532 [debug] [ThreadPool]: On create_workspace_fifa_project_dbt_snapshots: Close
+[0m12:59:28.917532 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16506-e2ae-1047-a5e3-1332ee161502) - Closing
+[0m12:59:29.054936 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace_fifa_project_dbt_snapshots) - Creating connection
+[0m12:59:29.058742 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace_fifa_project_dbt_snapshots'
+[0m12:59:29.060002 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace_fifa_project_dbt) - Creating connection
+[0m12:59:29.074427 [debug] [ThreadPool]: Using databricks connection "list_workspace_fifa_project_dbt_snapshots"
+[0m12:59:29.076449 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace_fifa_project_dbt'
+[0m12:59:29.076449 [debug] [ThreadPool]: On list_workspace_fifa_project_dbt_snapshots: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "5ef7219d-a9d1-4bd4-90c3-bfbdd46ab84b", "connection_name": "list_workspace_fifa_project_dbt_snapshots"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'workspace'
+  AND table_schema = 'fifa_project_dbt_snapshots'
+
+  
+[0m12:59:29.084591 [debug] [ThreadPool]: Using databricks connection "list_workspace_fifa_project_dbt"
+[0m12:59:29.090258 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:59:29.090258 [debug] [ThreadPool]: On list_workspace_fifa_project_dbt: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "5ef7219d-a9d1-4bd4-90c3-bfbdd46ab84b", "connection_name": "list_workspace_fifa_project_dbt"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'workspace'
+  AND table_schema = 'fifa_project_dbt'
+
+  
+[0m12:59:29.090258 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:59:29.548798 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16506-e363-1e99-8ee7-a00c1717c435) - Created
+[0m12:59:29.548798 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16506-e366-1dcf-9b21-d5ec4da12d1b) - Created
+[0m12:59:30.206032 [debug] [ThreadPool]: SQL status: OK in 1.120 seconds
+[0m12:59:30.218201 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f16506-e363-1e99-8ee7-a00c1717c435, command-id=01f16506-e379-136d-83f1-7770d291101f) - Closing
+[0m12:59:30.218201 [debug] [ThreadPool]: On list_workspace_fifa_project_dbt_snapshots: Close
+[0m12:59:30.218201 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16506-e363-1e99-8ee7-a00c1717c435) - Closing
+[0m12:59:30.268849 [debug] [ThreadPool]: SQL status: OK in 1.180 seconds
+[0m12:59:30.273471 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f16506-e366-1dcf-9b21-d5ec4da12d1b, command-id=01f16506-e379-1105-95b8-fd92929b85c6) - Closing
+[0m12:59:30.332697 [debug] [ThreadPool]: On list_workspace_fifa_project_dbt: Close
+[0m12:59:30.332697 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16506-e366-1dcf-9b21-d5ec4da12d1b) - Closing
+[0m12:59:30.444917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5ef7219d-a9d1-4bd4-90c3-bfbdd46ab84b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203A4BDC090>]}
+[0m12:59:30.444917 [debug] [Thread-4 (]: Began running node snapshot.fifa_project.team_snapshot
+[0m12:59:30.444917 [info ] [Thread-4 (]: 1 of 1 START snapshot fifa_project_dbt_snapshots.team_snapshot ................. [RUN]
+[0m12:59:30.460852 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=snapshot.fifa_project.team_snapshot) - Creating connection
+[0m12:59:30.460852 [debug] [Thread-4 (]: Acquiring new databricks connection 'snapshot.fifa_project.team_snapshot'
+[0m12:59:30.460852 [debug] [Thread-4 (]: Began compiling node snapshot.fifa_project.team_snapshot
+[0m12:59:30.460852 [debug] [Thread-4 (]: Began executing node snapshot.fifa_project.team_snapshot
+[0m12:59:30.539891 [debug] [Thread-4 (]: Using databricks connection "snapshot.fifa_project.team_snapshot"
+[0m12:59:30.555878 [debug] [Thread-4 (]: On snapshot.fifa_project.team_snapshot: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "5ef7219d-a9d1-4bd4-90c3-bfbdd46ab84b", "node_id": "snapshot.fifa_project.team_snapshot"} */
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    filter_name,
+    target_columns
+  FROM `workspace`.`information_schema`.`row_filters`
+  WHERE table_catalog = 'workspace'
+    AND table_schema = 'fifa_project_dbt_snapshots'
+    AND table_name = 'team_snapshot'
+[0m12:59:30.555878 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m12:59:30.939684 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f16506-e43a-1502-a927-da6d8af088a1) - Created
+[0m12:59:31.447473 [debug] [Thread-4 (]: SQL status: OK in 0.890 seconds
+[0m12:59:31.447473 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f16506-e43a-1502-a927-da6d8af088a1, command-id=01f16506-e44c-1ea8-b970-432e0a04abd4) - Closing
+[0m12:59:31.463760 [debug] [Thread-4 (]: Using databricks connection "snapshot.fifa_project.team_snapshot"
+[0m12:59:31.463760 [debug] [Thread-4 (]: On snapshot.fifa_project.team_snapshot: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "5ef7219d-a9d1-4bd4-90c3-bfbdd46ab84b", "node_id": "snapshot.fifa_project.team_snapshot"} */
+select * from (
+        select *,
+        md5(coalesce(cast(team_api_id as string ), '')
+         || '|' || coalesce(cast(
+    current_timestamp()
+ as string ), '')
+        ) as dbt_scd_id,
+        
+    current_timestamp()
+ as dbt_updated_at,
+        
+    current_timestamp()
+ as dbt_valid_from,
+        
+  
+  coalesce(nullif(
+    current_timestamp()
+, 
+    current_timestamp()
+), null)
+  as dbt_valid_to
+
+    from (
+        select * from `workspace`.`fifa_project`.`silver_team`
+    ) sbq
+
+
+    ) as __dbt_sbq
+    where false
+    limit 0
+
+[0m12:59:32.323170 [debug] [Thread-4 (]: SQL status: OK in 0.860 seconds
+[0m12:59:32.339236 [debug] [Thread-4 (]: Using databricks connection "snapshot.fifa_project.team_snapshot"
+[0m12:59:32.339236 [debug] [Thread-4 (]: On snapshot.fifa_project.team_snapshot: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "5ef7219d-a9d1-4bd4-90c3-bfbdd46ab84b", "node_id": "snapshot.fifa_project.team_snapshot"} */
+select * from (
+        select 
+    current_timestamp()
+ as dbt_snapshot_time
+    ) as __dbt_sbq
+    where false
+    limit 0
+
+[0m12:59:32.339236 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f16506-e43a-1502-a927-da6d8af088a1, command-id=01f16506-e49e-196d-b41a-fc2af85cf8f9) - Closing
+[0m12:59:32.642847 [debug] [Thread-4 (]: SQL status: OK in 0.300 seconds
+[0m12:59:32.642847 [debug] [Thread-4 (]: Writing runtime sql for node "snapshot.fifa_project.team_snapshot"
+[0m12:59:32.642847 [debug] [Thread-4 (]: Using databricks connection "snapshot.fifa_project.team_snapshot"
+[0m12:59:32.642847 [debug] [Thread-4 (]: On snapshot.fifa_project.team_snapshot: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "fifa_project", "target_name": "dev", "invocation_id": "5ef7219d-a9d1-4bd4-90c3-bfbdd46ab84b", "node_id": "snapshot.fifa_project.team_snapshot"} */
+
+      
+  
+    
+        create or replace table `workspace`.`fifa_project_dbt_snapshots`.`team_snapshot`
+      
+      
+    using delta
+  
+      
+      
+      
+      
+      
+      
+      
+      
+      as
+      select *,
+        md5(coalesce(cast(team_api_id as string ), '')
+         || '|' || coalesce(cast(
+    current_timestamp()
+ as string ), '')
+        ) as dbt_scd_id,
+        
+    current_timestamp()
+ as dbt_updated_at,
+        
+    current_timestamp()
+ as dbt_valid_from,
+        
+  
+  coalesce(nullif(
+    current_timestamp()
+, 
+    current_timestamp()
+), null)
+  as dbt_valid_to
+
+    from (
+        select * from `workspace`.`fifa_project`.`silver_team`
+    ) sbq
+
+
+  
+  
+[0m12:59:32.642847 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f16506-e43a-1502-a927-da6d8af088a1, command-id=01f16506-e522-17ed-b2f8-868caecedee5) - Closing
+[0m12:59:36.639699 [debug] [Thread-4 (]: SQL status: OK in 4.000 seconds
+[0m12:59:36.639699 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f16506-e43a-1502-a927-da6d8af088a1, command-id=01f16506-e551-1fd9-bc7f-ff92097d6a16) - Closing
+[0m12:59:36.667203 [debug] [Thread-4 (]: On snapshot.fifa_project.team_snapshot: Close
+[0m12:59:36.667203 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f16506-e43a-1502-a927-da6d8af088a1) - Closing
+[0m12:59:36.785910 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5ef7219d-a9d1-4bd4-90c3-bfbdd46ab84b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203A923C310>]}
+[0m12:59:36.785910 [info ] [Thread-4 (]: 1 of 1 OK snapshotted fifa_project_dbt_snapshots.team_snapshot ................. [[32mOK[0m in 6.33s]
+[0m12:59:36.785910 [debug] [Thread-4 (]: Finished running node snapshot.fifa_project.team_snapshot
+[0m12:59:36.785910 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m12:59:36.801615 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m12:59:36.801615 [info ] [MainThread]: 
+[0m12:59:36.801615 [info ] [MainThread]: Finished running 1 snapshot in 0 hours 0 minutes and 11.24 seconds (11.24s).
+[0m12:59:36.801615 [debug] [MainThread]: Command end result
+[0m12:59:36.846933 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\hasmi\Downloads\fifa_dbt_project\fifa_dbt_project\target\manifest.json
+[0m12:59:36.848681 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\hasmi\Downloads\fifa_dbt_project\fifa_dbt_project\target\semantic_manifest.json
+[0m12:59:36.854700 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\hasmi\Downloads\fifa_dbt_project\fifa_dbt_project\target\run_results.json
+[0m12:59:36.854700 [info ] [MainThread]: 
+[0m12:59:36.854700 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:59:36.854700 [info ] [MainThread]: 
+[0m12:59:36.854700 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m12:59:36.854700 [debug] [MainThread]: Command `dbt snapshot` succeeded at 12:59:36.854700 after 14.39 seconds
+[0m12:59:36.859404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203A1177790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203A638C950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203A10B5150>]}
+[0m12:59:36.859404 [debug] [MainThread]: Flushing usage events
+[0m12:59:37.391976 [debug] [MainThread]: An error was encountered while trying to flush usage events
