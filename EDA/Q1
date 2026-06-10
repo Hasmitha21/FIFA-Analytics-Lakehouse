@@ -1,0 +1,46 @@
+-- Team standings by season (table/leaderboard visual)
+WITH team_matches AS (
+    SELECT
+        season,
+        home_team_name AS team,
+        CASE WHEN result = 'HOME_WIN' THEN 'WIN'
+             WHEN result = 'DRAW' THEN 'DRAW'
+             ELSE 'LOSS' END AS outcome,
+        home_team_goal AS goals_for,
+        away_team_goal AS goals_against
+    FROM workspace.fifa_project_dbt.fct_match_results
+ 
+    UNION ALL
+ 
+    SELECT
+        season,
+        away_team_name AS team,
+        CASE WHEN result = 'AWAY_WIN' THEN 'WIN'
+             WHEN result = 'DRAW' THEN 'DRAW'
+             ELSE 'LOSS' END AS outcome,
+        away_team_goal AS goals_for,
+        home_team_goal AS goals_against
+    FROM workspace.fifa_project_dbt.fct_match_results
+)
+SELECT
+    team,
+    season,
+    COUNT(*) AS matches_played,
+    SUM(CASE WHEN outcome = 'WIN' THEN 1 ELSE 0 END) AS wins,
+    SUM(CASE WHEN outcome = 'DRAW' THEN 1 ELSE 0 END) AS draws,
+    SUM(CASE WHEN outcome = 'LOSS' THEN 1 ELSE 0 END) AS losses,
+    SUM(goals_for) AS goals_scored,
+    SUM(goals_against) AS goals_conceded,
+    SUM(CASE WHEN outcome = 'WIN' THEN 3 WHEN outcome = 'DRAW' THEN 1 ELSE 0 END) AS points
+FROM team_matches
+GROUP BY team, season
+ORDER BY season DESC, points DESC;
+
+
+ 
+ 
+
+ 
+ 
+
+
