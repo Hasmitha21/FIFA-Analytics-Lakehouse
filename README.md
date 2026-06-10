@@ -3,9 +3,7 @@
 An end-to-end data lakehouse pipeline built on **Databricks** and **dbt**, transforming the [European Soccer Database](https://www.kaggle.com/datasets/hugomathien/soccer) (Kaggle) into analytics-ready dimensional models — including a **Slowly Changing Dimension (SCD Type 2)** for tracking player rating history over time.
 
 
-
-![Architecture Diagram])
-<img width="300" height="144" alt="fifa_lakehouse_architecture" src="https://github.com/user-attachments/assets/80fc7cf3-16c3-4915-9dbe-3854479faf3c" />
+![Architecture Diagram](fifa_lakehouse_architecture.svg)
 
 
 ## Overview
