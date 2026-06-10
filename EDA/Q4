@@ -1,0 +1,9 @@
+--Goals trend per season (line chart)
+SELECT
+    season,
+    COUNT(*) AS matches,
+    SUM(home_team_goal + away_team_goal) AS total_goals,
+    ROUND(AVG(home_team_goal + away_team_goal), 2) AS avg_goals_per_match
+FROM workspace.fifa_project_dbt.fct_match_results
+GROUP BY season
+ORDER BY season;
