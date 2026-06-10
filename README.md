@@ -96,23 +96,3 @@ A Databricks SQL dashboard with 4 visualizations:
         └── team_snapshot.sql    # dbt-native SCD2 demo
 ```
 
-## How to Run
-
-1. **Extract data**: run `extract_sqlite_to_csv.py` against the Kaggle `database.sqlite` file
-2. **Upload** the resulting CSVs to a Unity Catalog Volume in Databricks
-3. **Run notebooks in order**: `02_bronze_layer.py` → `03_silver_layer.py` → `04_gold_layer.py`
-4. **Run dbt**:
-   ```bash
-   cd fifa_dbt_project
-   dbt run
-   dbt test
-   dbt snapshot
-   ```
-5. **Build the dashboard** using the queries in `05_dashboard_queries.sql`
-
-## Future Improvements
-
-- Add a parameterized player search to the dashboard
-- Extend `fct_match_results` with betting odds columns for predictive modeling
-- Schedule the pipeline with Databricks Workflows for daily/weekly refresh
-- Migrate raw storage from Unity Catalog Volumes to S3/ADLS via external locations for production-style cloud storage
