@@ -1,0 +1,16 @@
+# Copy this file to ~/.dbt/profiles.yml (create the .dbt folder if it doesn't exist)
+# Fill in the three values from your Databricks SQL Warehouse "Connection details" tab
+# and the personal access token you generated.
+# DO NOT commit this file with real credentials to GitHub.
+
+fifa_project:
+  target: dev
+  outputs:
+    dev:
+      type: databricks
+      catalog: workspace
+      schema: fifa_project_dbt
+      host: "<YOUR_SERVER_HOSTNAME>"      # e.g. dbc-abc12345-6789.cloud.databricks.com
+      http_path: "<YOUR_HTTP_PATH>"        # e.g. /sql/1.0/warehouses/abcdef1234567890
+      token: "<YOUR_ACCESS_TOKEN>"         # the PAT you generated
+      threads: 4
